@@ -1297,6 +1297,21 @@ body {
 body {
   font-size: 10px;
 }
+.b-black-bg {
+  color: #ffffff;
+  background-color: #000000;
+}
+.b-semiblack-bg {
+  color: #ffffff;
+  background-color: #000000;
+}
+.b-white-bg {
+  color: #000000;
+  background-color: #ffffff;
+}
+.h540 {
+  height: 540px;
+}
 @-webkit-keyframes processloading {
   0% {
     width: 0%;
