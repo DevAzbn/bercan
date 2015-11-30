@@ -40,6 +40,7 @@
 <script src="/js/fecss.js" ></script>
 <script src="/js/storage.js" ></script>
 
+<script src="/js/jquery-plugin/jquery.jqfeChangeClassEvent.js" ></script>
 <script src="/js/jquery-plugin/jquery.jqfeScrollTo.js" ></script>
 
 <!--
@@ -50,7 +51,7 @@
 <script src="/js/document-ready.js" ></script>
 
 </head>
-<body class="fecss full-height fe-dbg outline " >
+<body class="fecss full-height fe-dbg  " >
 	
 	
 	<div class="full-screen active semi-dark  page-loader " >
@@ -67,13 +68,25 @@
 	
 	
 	
-	<div class="fluid-block top-hoverdown-menu b-semiblack-bg " >
+	<div class="fluid-block b-top-header " >
 	
 	<div class="adaptive-block grid grid-12 " >
 		<div class="grid-row" >
 			
 			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
-				top-hoverdown-menu
+				<div class="header-list d-t hp100 fluid-block" >
+					<div class="d-t-c w240" ><a class="menu-btn" href="#menu" ><span class="bg-icon menu" ></span>Меню</a></div>
+					<div class="d-t-c align-center" ><a class="phone-btn" href="tel:+73466424255" ><span class="bg-icon phone" ></span>+7 (3466) 42-42-55</a></div>
+					<div class="d-t-c align-center" ><a class="email-btn" href="mailto:info@bercan.ru" ><span class="bg-icon email" ></span>info@bercan.ru</a></div>
+					<div class="d-t-c align-center" >
+						<a href="http://vk.com/" ><span class="bg-icon vk" ></span></a>
+						<a href="http://facebook.com/" ><span class="bg-icon fb" ></span></a>
+						<a href="http://instagram.com/" ><span class="bg-icon inst" ></span></a>
+						<a href="http://ok.ru/" ><span class="bg-icon ok" ></span></a>
+						<a href="http://youtube.com/" ><span class="bg-icon yt" ></span></a>
+					</div>
+					<div class="d-t-c align-right" ><a class="cart-btn" href="#cart" ><span class="bg-icon cart" ></span>Корзина</a></div>
+				</div>
 			</div>
 			
 			<div class="clear" ></div>
@@ -83,13 +96,68 @@
 	
 </div>
 	
-	<div class="fluid-block top-list-menu b-black-bg " >
+	<div class="fluid-block b-top-menu " >
+	
+	<div class="adaptive-block grid grid-12 " >
+		<div class="grid-row" >
+			
+			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 h75" >
+				<div class="menu-list d-t hp100" >
+					<a class="d-t-c w240" href="/" ><img class="image resp " src="img/b-top-menu-logo.png" /></a>
+					<a class="d-t-c" href="#" >Спортивное питание</a>
+					<a class="d-t-c" href="#" >Аксессуары</a>
+					<a class="d-t-c" href="#" >Экипировка</a>
+					<a class="d-t-c" href="#" >Одежда</a>
+					<a class="d-t-c" href="#" >Производители</a>
+					<a class="d-t-c search-icon wp005" href="#" >
+						<div class="search-block" ></div>
+						<img class="image " src="img/b-top-menu-search-icon.png" />
+					</a>
+				</div>
+			</div>
+			<!--
+			<div class="clmn-12 clmn-xs-9 clmn-sm-9 clmn-md-9 clmn-lg-9 h75" >
+				<ul class="menu-list d-t hp100" >
+					<li class="d-t-c" ><a href="#" >Спортивное питание</a></li>
+					<li class="d-t-c" ><a href="#" >Аксессуары</a></li>
+					<li class="d-t-c" ><a href="#" >Экипировка</a></li>
+					<li class="d-t-c" ><a href="#" >Одежда</a></li>
+					<li class="d-t-c" ><a href="#" >Производители</a></li>
+					<li class="d-t-c" ><a href="#" ><img class="image " src="img/b-top-menu-search-icon.png" /></a></li>
+				</ul>
+			</div>
+			-->
+			
+			<div class="clear" ></div>
+		
+		</div>
+	</div>
+	
+</div>
+	
+	<div class="fluid-block b-top-slider " >
 	
 	<div class="adaptive-block grid grid-12 " >
 		<div class="grid-row" >
 			
 			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
-				top-list-menu
+				b-top-slider
+			</div>
+			
+			<div class="clear" ></div>
+		
+		</div>
+	</div>
+	
+</div>
+	
+	<div class="fluid-block b-top-submenu " >
+	
+	<div class="adaptive-block grid grid-12 " >
+		<div class="grid-row" >
+			
+			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+				b-top-submenu
 			</div>
 			
 			<div class="clear" ></div>
@@ -151,7 +219,7 @@
 	
 	
 	
-	<div class="fluid-block bottom-list-menu b-semiblack-bg " >
+	<div class="fluid-block b-bottom-menu " >
 	
 	<div class="adaptive-block grid grid-12 " >
 		<div class="grid-row" >
@@ -167,13 +235,18 @@
 	
 </div>
 	
-	<div class="fluid-block bottom-copy-menu b-black-bg " >
+	<div class="fluid-block b-bottom-copy " >
 	
 	<div class="adaptive-block grid grid-12 " >
 		<div class="grid-row" >
 			
-			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
-				bottom-copy-menu
+			<div class="clmn-6 clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6 " >
+				<span class="text" >© 2012-2015. Все права защищены.</span>
+				<span class="pay-icons" ></span>
+			</div>
+			
+			<div class="clmn-6 clmn-xs-12 clmn-sm-12 clmn-md-6 clmn-lg-6 align-right" >
+				<span class="text" >Дизайн сайта Лабинцев Сергей</span>
 			</div>
 			
 			<div class="clear" ></div>

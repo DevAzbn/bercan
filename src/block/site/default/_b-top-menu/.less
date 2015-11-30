@@ -1,0 +1,36 @@
+.b-top-menu {
+	#site.bg(#1d1d1d);
+	#site.color(@c-hex-w);
+	padding:3.8em 0;
+	
+	.menu-list {
+		a {
+			text-align:center;
+			#site.size(1.5em);
+			#site.color(@c-hex-w);
+			#site.bold();
+			
+			&:last-child {
+				text-align:right;
+			}
+			
+			&:hover {
+				#site.underline();
+			}
+		}
+	}
+	
+	.search-icon {
+		.search-block {
+			display:inline-block;
+			width:1px;
+			height:31px;
+			#site.bg(#7c7c7c);
+			vertical-align:middle;
+		}
+		img {
+			margin-left:2em;
+			vertical-align:middle;
+		}
+	}
+}

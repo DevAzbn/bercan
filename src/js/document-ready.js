@@ -50,4 +50,16 @@ $(window).on('scroll',function(){
 }).trigger('scroll');
 
 
+$('body').on('changeClass',function(){
+	
+	
+	[snp tpl="src/_/concat.body.changeClass.js" ]
+
+	
+});
+
+
+[snp tpl="src/_/concat.changeClass.js" ]
+
+
 });
