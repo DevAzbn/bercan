@@ -1,6 +1,7 @@
 .b-top-header {
 	#site.bg(#2e2e2e);
 	#site.color(#838383);
+	position:relative;
 	
 	.header-list {
 		a {
@@ -18,6 +19,18 @@
 				#site.bold();
 			}
 			
+			&.menu-btn {
+				
+				&.active {
+					.bg-icon {
+						&.menu {
+							background-image:url('@{url-path-img}/b-top-header-btn-menu-cross.png');
+						}
+					}
+				}
+				
+			}
+			
 			&.cart-btn {
 				display:inline-block;
 				min-width:150px;
@@ -25,8 +38,24 @@
 				height:50px;
 				#site.lh(50px);
 				#site.bg(#3a3a3a);
+				transition:all @trans-speed ease;
+				
+				&.active {
+					#site.color(#8f0e0e);
+					#site.bg(@c-hex-w);
+					
+					.bg-icon {
+						&.cart {
+							background-image:url('@{url-path-img}/b-top-header-btn-cart-red.png');
+						}
+					}
+				}
 			}
 		}
+	}
+	
+	.drd-container {
+		position:relative;
 	}
 	
 	.bg-icon {

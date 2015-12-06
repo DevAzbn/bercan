@@ -25,6 +25,10 @@ body {
 		height:100%;
 	}
 	
+	.w-auto {
+		width:auto;
+	}
+	
 }
 
 .h75 {
@@ -70,9 +74,54 @@ body {
 	#site.bg(#232323);
 	#site.color(@c-hex-w);
 }
+.b-drd-menu {
+	#site.bg(#232323);
+	position:absolute;
+	left:0;
+	top:100%;
+	width:100%;
+	transform-origin: 10% 0;
+	transform:scale(1, 0);
+	transition:transform @trans-speed ease;
+	padding: 3.8em 0;
+	
+	&.active {
+		transform:scale(1);
+	}
+	
+	.while-link {
+		#site.color(@c-hex-w);
+		#site.size(1.5em);
+		#site.bold();
+		#site.lh(2.5em);
+		display:block;
+	}
+	
+	.grey-link {
+		#site.color(#777777);
+		#site.size(1.4em);
+	}
+	
+}
+.b-top-cart {
+	#site.bg(@c-hex-w);
+	position:absolute;
+	right:0;
+	top:100%;
+	width:100%;
+	transform-origin: 100% 0;
+	transform:scale(0);
+	transition:transform @trans-speed ease;
+	
+	&.active {
+		transform:scale(1);
+	}
+	
+}
 .b-top-header {
 	#site.bg(#2e2e2e);
 	#site.color(#838383);
+	position:relative;
 	
 	.header-list {
 		a {
@@ -90,6 +139,18 @@ body {
 				#site.bold();
 			}
 			
+			&.menu-btn {
+				
+				&.active {
+					.bg-icon {
+						&.menu {
+							background-image:url('@{url-path-img}/b-top-header-btn-menu-cross.png');
+						}
+					}
+				}
+				
+			}
+			
 			&.cart-btn {
 				display:inline-block;
 				min-width:150px;
@@ -97,8 +158,24 @@ body {
 				height:50px;
 				#site.lh(50px);
 				#site.bg(#3a3a3a);
+				transition:all @trans-speed ease;
+				
+				&.active {
+					#site.color(#8f0e0e);
+					#site.bg(@c-hex-w);
+					
+					.bg-icon {
+						&.cart {
+							background-image:url('@{url-path-img}/b-top-header-btn-cart-red.png');
+						}
+					}
+				}
 			}
 		}
+	}
+	
+	.drd-container {
+		position:relative;
 	}
 	
 	.bg-icon {
@@ -145,6 +222,8 @@ body {
 	padding:3.8em 0;
 	
 	.menu-list {
+		position:relative;
+		
 		a {
 			text-align:center;
 			#site.size(1.5em);
@@ -158,10 +237,16 @@ body {
 			&:hover {
 				#site.underline();
 			}
+			
+			&.m-item {
+				margin:0 0.1em;
+			}
 		}
 	}
 	
 	.search-icon {
+		position:relative;
+		
 		.search-block {
 			display:inline-block;
 			width:1px;
@@ -169,14 +254,112 @@ body {
 			#site.bg(#7c7c7c);
 			vertical-align:middle;
 		}
-		img {
-			margin-left:2em;
-			vertical-align:middle;
+		.search-btn {
+			img {
+				margin-left:1.4em;
+				vertical-align:middle;
+			}
+		}
+	}
+	
+	.search-container {
+		transform-origin:100% 50%;
+		transition:all @trans-speed ease;
+		position:absolute;
+		right:0;
+		top:0;
+		height:100%;
+		width:76%;
+		transform:scale(0);
+		#site.bg(#1d1d1d);
+		
+		.search-field {
+			position:absolute;
+			left:0;
+			top:25%;
+			width:100%;
+			height:50%;
+			border-left:1px #bababa solid;
+			
+			::-webkit-input-placeholder {
+				color: #838383;
+			}
+			:-moz-placeholder { /* Firefox 18- */
+				color: #838383;
+			}
+			::-moz-placeholder {  /* Firefox 19+ */
+				color: #838383;
+			}
+			:-ms-input-placeholder {
+				color: #838383;
+			}
+			
+			input {
+				border:none;
+				height:100%;
+				#site.size(1.8em);
+				#site.color(#838383);
+				#site.lh(1.3em);
+				#site.bg(transparent);
+				padding: 0 1.2em;
+				
+				&:focus {
+					outline:none;
+					
+				}
+			}
+		}
+		
+		.close-search {
+			position:absolute;
+			right:0;
+			top:25%;
+			height:50%;
+			width:3em;
+			background-position:right center;
+			background-repeat:no-repeat;
+			background-image:url('@{url-path-img}/b-top-menu-search-close-search.png');
+		}
+		
+		&.active {
+			position:absolute;
+			right:0;
+			top:0;
+			transform:scale(1);
 		}
 	}
 }
 .b-top-slider {
-
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-image:url('@{url-path-img}/b-top-slider-main-body.jpg');
+	height:540px;
+	width:100%;
+	
+	.d-t-c {
+		width:100%;
+	}
+	
+	.title {
+		text-align:center;
+		font-family:abi;
+		#site.color(#fffefe);
+		#site.size(6em);
+		#site.bold();
+		#site.uppercase();
+	}
+	.venzel {
+		margin:4em 0 7em;
+	}
+	.next {
+		text-align:center;
+		a {
+			#site.color(#fffefe);
+			#site.size(1.5em);
+			border:1px #fffefe solid;
+			padding:1em 2em;
+		}
+	}
 }
 .b-top-submenu {
 

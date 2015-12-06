@@ -1,0 +1,29 @@
+.b-drd-menu {
+	#site.bg(#232323);
+	position:absolute;
+	left:0;
+	top:100%;
+	width:100%;
+	transform-origin: 10% 0;
+	transform:scale(1, 0);
+	transition:transform @trans-speed ease;
+	padding: 3.8em 0;
+	
+	&.active {
+		transform:scale(1);
+	}
+	
+	.while-link {
+		#site.color(@c-hex-w);
+		#site.size(1.5em);
+		#site.bold();
+		#site.lh(2.5em);
+		display:block;
+	}
+	
+	.grey-link {
+		#site.color(#777777);
+		#site.size(1.4em);
+	}
+	
+}
