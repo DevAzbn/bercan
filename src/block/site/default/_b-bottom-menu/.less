@@ -1,4 +1,52 @@
 .b-bottom-menu {
 	#site.bg(#232323);
 	#site.color(@c-hex-w);
+	
+	ul {
+		list-style-type:none;
+		#site.lh(36px);
+		margin:5em 0;
+		
+		li {
+			
+			&.title {
+				#site.uppercase();
+				#site.color(#ffffff);
+				#site.bold();
+				#site.size(1.2em);
+				font-family:gb;
+			}
+			
+			&.adr {
+				#site.color(#838383);
+				#site.size(1.3em);
+			}
+			
+			&.phone, &.email {
+				padding-left:2em;
+				background-position:left center;
+				background-repeat:no-repeat;
+				background-size:10px 7px;
+			}
+			
+			&.phone {
+				background-image:url('@{url-path-img}/b-top-header-btn-phone.png');
+			}
+			
+			&.email {
+				background-image:url('@{url-path-img}/b-top-header-btn-email.png');
+			}
+			
+			a {
+				#site.color(#838383);
+				#site.size(1.3em);
+				
+				&:hover {
+					#site.color(#ffffff);
+				}
+			}
+			
+		}
+		
+	}
 }

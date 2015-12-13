@@ -28,7 +28,7 @@
 			}
 			
 			btn.toggleClass('active');
-			$('.b-drd-menu').toggleClass('active').height($('.b-top-menu').height());
+			$('.b-drd-menu').toggleClass('active').height($('.b-top-menu .menu-list').height());
 		})
 		
 	});

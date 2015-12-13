@@ -1,10 +1,39 @@
 .b-top-menu {
 	#site.bg(#1d1d1d);
 	#site.color(@c-hex-w);
-	padding:3.8em 0;
+	/*padding:3.8em 0;*/
 	
 	.menu-list {
 		position:relative;
+		
+		.item.active, .item:hover {
+			position:relative;
+			cursor:pointer;
+			
+			.before {
+				content:'';
+				position:absolute;
+				left:0;
+				bottom:0;
+				height:4px;
+				width:100%;
+				#site.bg(#8f0f0f);
+				z-index:11;
+			}
+			.after {
+				content:'';
+				position:absolute;
+				left:49%;
+				bottom:0;
+				height:5.65px;
+				width:5.65px;
+				transform-origin:0 100%;
+				transform:rotate(45deg);
+				#site.bg(#8f0f0f);
+				z-index:11;
+			}
+			
+		}
 		
 		a {
 			text-align:center;
@@ -17,13 +46,14 @@
 			}
 			
 			&:hover {
-				#site.underline();
+				
 			}
 			
 			&.m-item {
 				margin:0 0.1em;
 			}
 		}
+		
 	}
 	
 	.search-icon {
@@ -109,5 +139,9 @@
 			top:0;
 			transform:scale(1);
 		}
+	}
+	
+	.drd-menu-container {
+		position:relative;
 	}
 }
