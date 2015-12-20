@@ -1,0 +1,84 @@
+.b-contact {
+	.con-work {
+		#site.color(#000000);
+		#site.size(1.6em);
+		#site.lh(2.25em);
+		
+		a {
+			font-family:gb;
+			#site.color(#8f0e0e);
+			#site.size(2em);
+			#site.bold();
+			
+			&:hover {
+				#site.underline();
+			}
+		}
+	}
+	.con-order-call {
+		padding:3.5em 0 4.5em;
+		
+		a {
+			#site.size(1.4em);
+			#site.color(#8f0e0e);
+			border-radius: 1px;
+			border:1px #8f0e0e solid;
+			padding:0.7em 2em;
+		}
+	}
+	.con-quality {
+		#site.color(#000000);
+		#site.size(1.6em);
+		#site.lh(2.25em);
+		
+		a {
+			font-family:gb;
+			#site.color(#8f0e0e);
+			#site.size(1.2em);
+			#site.bold();
+			
+			&:hover {
+				#site.underline();
+			}
+		}
+	}
+	.black-line {
+		width:8em;
+		height:0.2em;
+		#site.bg(#1d1d1d);
+		margin:4.5em 0 3.5em;
+	}
+	.con-nizhv-contact {
+		#site.bold();
+		#site.color(#000000);
+		#site.size(1.6em);
+		#site.lh(2.5em);
+		
+		a {
+			display:inline-block;
+			background-position:left center;
+			background-repeat:no-repeat;
+			#site.color(#8f0e0e);
+			padding-left:2em;
+			
+			&:hover {
+				#site.underline();
+			}
+			
+			&.adr {
+				background-image:url('@{url-path-img}/con-nizhv-contact-adr.png');
+			}
+			&.phone {
+				background-image:url('@{url-path-img}/con-nizhv-contact-phone.png');
+			}
+		}
+	}
+	.map-cont {
+		height:100%;
+		
+		.b-contact-map-cont-map {
+			height:100%;
+			min-height:420px;
+		}
+	}
+}

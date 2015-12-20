@@ -65,3 +65,29 @@ body {
 .pl1 {
 	padding-left:10px !important;
 }
+
+.on-hover {
+	
+	&.ch-color {
+		
+		&.btn.r2w {
+			#site.color(#8f0f0f);
+			#site.bg(transparent);
+			
+			&:hover {
+				#site.color(@c-hex-w);
+				#site.bg(#8f0f0f)
+			}
+		}
+		
+	}
+	
+	&.ch-underline {
+		#site.underline(none);
+		
+		&:hover {
+			#site.underline();
+		}
+	}
+	
+}

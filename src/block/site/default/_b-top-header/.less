@@ -11,7 +11,6 @@
 				#site.color(@c-hex-w);
 				#site.bold();
 				#site.uppercase();
-				#site.size(1.4em);
 			}
 			
 			&.phone-btn, &.email-btn {
@@ -20,6 +19,7 @@
 			}
 			
 			&.menu-btn {
+				#site.size(1.4em);
 				
 				&.active {
 					.bg-icon {
@@ -33,12 +33,13 @@
 			
 			&.cart-btn {
 				display:inline-block;
-				min-width:150px;
+				min-width:175px;
 				text-align:center;
 				height:50px;
 				#site.lh(50px);
 				#site.bg(#3a3a3a);
 				transition:all @trans-speed ease;
+				#site.size(1.25em);
 				
 				&.active {
 					#site.color(#8f0e0e);
