@@ -76,7 +76,17 @@ body {
 			
 			&:hover {
 				#site.color(@c-hex-w);
-				#site.bg(#8f0f0f)
+				#site.bg(#8f0f0f);
+			}
+		}
+		
+		&.btn.w2r {
+			#site.color(@c-hex-w);
+			#site.bg(#8f0f0f);
+			
+			&:hover {
+				#site.color(#8f0f0f);
+				background-color:@c-hex-w !important;
 			}
 		}
 		
@@ -90,4 +100,8 @@ body {
 		}
 	}
 	
+}
+
+.btn {
+	outline:none;
 }

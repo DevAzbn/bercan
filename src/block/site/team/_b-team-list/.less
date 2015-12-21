@@ -1,0 +1,57 @@
+.b-team-list {
+	
+	.item {
+		padding-bottom:6em;
+		
+		.photo {
+			text-align:center;
+			overflow-y:hidden;
+			height:360px;
+			
+			img {
+				transition:all @trans-speed / 2 ease;
+				transform-origin:center center;
+				border:0px #8f0f0f solid;
+				transform:scale(1);
+			}
+		}
+		.title {
+			#site.size(1.8em);
+			#site.color(#1d1d1d);
+			#site.bold();
+			margin:2em 1.5em;
+			position:relative;
+			
+			&:after {
+				content:'';
+				position:absolute;
+				left:0em;
+				bottom:-2em;
+				#site.w(60px);
+				#site.h(8px);
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-image:url('@{url-path-img}/b-team-list-item-arrow.png');
+				transition:all @trans-speed / 2 ease;
+			}
+		}
+		
+		&:hover {
+			.photo {
+				img {
+					transform:scale(0.75);
+					border:10px #8f0f0f solid;
+				}
+			}
+			.title {
+				#site.underline();
+				
+				&:after {
+					left:2em;
+				}
+			}
+		}
+		
+	}
+	
+}

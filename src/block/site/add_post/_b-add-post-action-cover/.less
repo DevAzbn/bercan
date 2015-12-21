@@ -1,0 +1,45 @@
+.b-add-post-action-cover {
+	
+	.action-cover {
+		#site.h(45em);
+		#site.color(@c-hex-w);
+		margin-bottom:6em;
+		padding:5em;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-image:url('@{url-path-img}/b-add-post-action-cover-bg.jpg');
+		
+		.title {
+			#site.ff(asp);
+			#site.size(4.8em);
+			max-width:640px;
+		}
+		.text {
+			#site.ff(gr);
+			#site.size(1.6em);
+			#site.lh(1.5em);
+			margin:2em 0;
+			max-width:555px;
+		}
+		.preview {
+			#site.ff(gr);
+			#site.size(3em);
+			#site.lh(0.8em);
+			max-width:620px;
+		}
+		.more {
+			a {
+				#site.ff(gr);
+				#site.size(1.3em);
+				#site.color(#9b9b9b);
+				#site.underline();
+				
+				&:hover {
+					#site.color(@c-hex-w);
+				}
+			}
+		}
+	}
+	
+}

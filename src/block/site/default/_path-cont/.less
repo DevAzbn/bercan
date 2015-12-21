@@ -5,5 +5,17 @@
 		#site.color(#b1b1b1);
 		#site.size(1.2em);
 		margin-right:2.25em;
+		
+		&:hover {
+			#site.underline();
+		}
+		
+		&:last-child {
+			cursor:default;
+			
+			&:hover {
+				#site.underline(none);
+			}
+		}
 	}
 }

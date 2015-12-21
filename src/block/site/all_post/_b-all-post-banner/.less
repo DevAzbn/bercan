@@ -1,0 +1,40 @@
+.b-all-post-banner {
+	margin:2em 0;
+	
+	.banner-title {
+		padding:4.5em 4em;
+		background-position:center center;
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-image:url('@{url-path-img}/b-add-post-action-cover-bg.jpg');
+		
+		span {
+			display:inline-block;
+			vertical-align: middle;
+			#site.ff(asp);
+			#site.color(#ffffff);
+			#site.bold();
+			#site.size(2.4em);
+			#site.lh(24px);
+			#site.uppercase();
+		}
+		
+		a {
+			display:inline-block;
+			vertical-align: middle;
+			#site.ff(gr);
+			#site.color(#ffffff);
+			#site.size(1.2em);
+			#site.lh(24px);
+			#site.bold(normal);
+			#site.uppercase(capitalize);
+			margin-left:3.5em;
+			
+			&:hover {
+				#site.underline();
+			}
+		}
+		
+	}
+	
+}
