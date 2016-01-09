@@ -2603,6 +2603,180 @@ body {
 		padding-left:2.5em;
 	}
 }
+.b-profile-content {
+	
+	.left-cont {
+		
+		.img-cont {
+			
+			.change-img {
+				text-align:center;
+				padding:2em;
+				
+				a {
+					#site.size(1.3em);
+					#site.color(#8f0e0e);
+					#site.underline();
+					
+					&:hover {
+						#site.underline(none);
+					}
+				}
+			}
+			
+		}
+		.contact-cont {
+			padding:1.5em 0em 1.5em 5em;
+			
+			.item {
+				#site.color(#1d1d1d);
+				#site.size(1.4em);
+				#site.lh(2.5em);
+				background-position:left center;
+				background-repeat:no-repeat;
+				padding-left:2em;
+				margin-bottom: 0.4em;
+				
+				a {
+					#site.color(#1d1d1d);
+					
+					&:hover {
+						#site.underline();
+					}
+				}
+				
+				&.phone {
+					background-image:url('@{url-path-img}/profile-contact-phone.png');
+				}
+				&.email {
+					background-image:url('@{url-path-img}/profile-contact-email.png');
+				}
+				&.vk {
+					background-image:url('@{url-path-img}/profile-contact-vk.png');
+				}
+				&.fb {
+					background-image:url('@{url-path-img}/profile-contact-fb.png');
+				}
+				&.inst {
+					background-image:url('@{url-path-img}/profile-contact-inst.png');
+				}
+				&.post-count {
+					background-image:url('@{url-path-img}/profile-contact-post-count.png');
+				}
+			}
+			
+		}
+		
+	}
+	
+	.right-cont {
+		position:relative;
+		
+		&:before {
+			content:'';
+			position:absolute;
+			right:100%;
+			top:0;
+			#site.h(100%);
+			#site.w(2px);
+			#site.bg(#dddddd);
+		}
+		
+		.buyed {
+			.title-cont {
+				clear:both;
+				#site.size(1.3em);
+				#site.lh(3em);
+				#site.color(#000000);
+				#site.uppercase();
+				#site.bold();
+				margin-bottom:2.5em;
+			}
+			
+			.item {
+				display:block;
+				cursor:pointer;
+				margin-bottom:2.5em;
+				
+				.img {
+					float:left;
+					margin-right:1em;
+					
+					img {
+						max-width:5.5em;
+					}
+				}
+				.title {
+					display:block;
+					#site.color(#1d1d1d);
+					#site.size(1.3em);
+					#site.lh(1.4em);
+					#site.underline();
+					margin-bottom:0.7em;
+					
+					&:hover {
+						#site.underline(none);
+					}
+				}
+				.cost {
+					display:block;
+					#site.color(#8f0e0e);
+					#site.size(1.3em);
+					#site.lh(1.4em);
+					#site.bold();
+				}
+			}
+		}
+		
+		
+	}
+	
+}
+.b-profile-header {
+	
+}
+.profile-title {
+	margin-bottom:3em;
+	
+	.back-to-shop {
+		float:right;
+		padding-top:0.9em;
+		
+		.all-product-btn {
+			#site.color(#8f0f0f);
+			#site.size(1.4em);
+			border-radius: 2px;
+			border:2px #8f0f0f solid;
+			padding:0.7em 2em;
+		}
+	}
+	
+	.title {
+		.value {
+			font-family: asp;
+			#site.size(3em);
+			#site.bold();
+			#site.uppercase();
+			#site.color(#8f0e0e);
+			vertical-align:middle;
+		}
+		
+		.profile-edit {
+			#site.size(1.3em);
+			#site.color(#8f0e0e);
+			#site.lh(30px);
+			margin-left:3em;
+			#site.underline();
+			
+			&:hover {
+				#site.underline(none);
+			}
+			
+		}
+		
+	}
+	
+}
 .b-team-list {
 	
 	.item {
