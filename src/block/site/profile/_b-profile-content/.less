@@ -58,6 +58,42 @@
 				&.post-count {
 					background-image:url('@{url-path-img}/profile-contact-post-count.png');
 				}
+				&.cart-count {
+					background-image:url('@{url-path-img}/profile-contact-cart-count.png');
+				}
+				&.created_at {
+					background-image:none;
+					padding-left:0em;
+				}
+			}
+			
+			&.without-edit {
+				
+				.item {
+					
+					&.vk, &.fb, &.inst {
+						display:inline-block;
+						border-radius:50%;
+						border:2px #8f0f0f solid;
+						#site.w(3em);
+						#site.h(3em);
+						background-position:center center;
+						padding-left:0em;
+						margin-right:2em;
+						margin-top:1em;
+						
+						a {
+							content:'';
+							display:inline-block;
+							#site.w(100%);
+							#site.h(100%);
+							#site.color(transparent);
+							overflow:hidden;
+						}
+					}
+					
+				}
+				
 			}
 			
 		}
@@ -78,9 +114,11 @@
 		}
 		
 		.buyed {
+			padding-left:4em;
+			
 			.title-cont {
 				clear:both;
-				#site.size(1.3em);
+				#site.size(1.4em);
 				#site.lh(3em);
 				#site.color(#000000);
 				#site.uppercase();
@@ -99,8 +137,38 @@
 					
 					img {
 						max-width:5.5em;
+						
 					}
 				}
+				
+				.status {
+					float:right;
+					text-align:right;
+					#site.size(1.2em);
+					#site.bold();
+					#site.color(#1d1d1d);
+					
+					.as-text {
+						display:block;
+						margin-top:1em;
+						
+						&.status0 {
+							#site.color(#1d1d1d);
+						}
+						&.status1 {
+							#site.color(#318022);
+						}
+						
+					}
+				}
+				
+				.created_at {
+					display:block;
+					#site.size(1.2em);
+					#site.color(#838383);
+					#site.lh(1.5em);
+				}
+				
 				.title {
 					display:block;
 					#site.color(#1d1d1d);
@@ -108,18 +176,20 @@
 					#site.lh(1.4em);
 					#site.underline();
 					margin-bottom:0.7em;
+					max-width:25em;
 					
 					&:hover {
 						#site.underline(none);
 					}
 				}
 				.cost {
-					display:block;
+					display:none;
 					#site.color(#8f0e0e);
 					#site.size(1.3em);
 					#site.lh(1.4em);
 					#site.bold();
 				}
+				
 			}
 		}
 		
