@@ -45,6 +45,7 @@ $(".b-sale-leader-list").each(function(e){var a=$(this),l=a.find(".menu ul");$("
 $(".b-order-content").each(function(i){var t=$(this);t.find('.order-form .radio-item .item .variant input[type="radio"]').on("click",function(i){i.stopPropagation()}),t.find(".order-form .radio-item .item .variant").on("click",function(i){i.preventDefault();var t=$(this);t.find('input[type="radio"]').trigger("click")}),t.find(".order-form .checkbox-item label").on("click",function(i){i.preventDefault();var t=$(this);t.parent().find('input[type="checkbox"]').trigger("click")})});
 $(".b-product-content").each(function(t){$(this);$(".photos .other-photos .item").on("click",function(t){t.preventDefault();var i=$(this),e=i.find("img").attr("src");i.closest(".photos").find(".main-photo img").attr("src",e)}),$(".main-info .header ul li a").on("click",function(t){t.preventDefault();var i=$(this);$(".main-info .header ul li").removeClass("active"),i.parent().addClass("active"),$(".main-info .info-block").removeClass("active").filter(i.attr("href")).addClass("active")}).eq(0).trigger("click")});
 $(".b-registration-content").each(function(t){$(this)});
+$(".b-review-content").each(function(e){var i=$(this);i.find(".review-load a").on("click",function(e){e.preventDefault();var i=$(this);i.addClass("active"),setTimeout(function(){i.removeClass("active")},2500)}).eq(0).trigger("click")});
 
 
 $(window).on('resize',function(event){
@@ -70,7 +71,7 @@ $(window).on('scroll',function(){
 $('body').on('changeClass',function(){
 	
 	
-	$(".line-gallery").each(function(a){event.preventDefault();var t=$(this),s=$("body").eq(0),i=3;s.hasClass("window-width-xs")?i=t.attr("data-xs-vis")||1:s.hasClass("window-width-sm")?i=t.attr("data-sm-vis")||2:s.hasClass("window-width-md")?i=t.attr("data-md-vis")||3:s.hasClass("window-width-lg")&&(i=t.attr("data-lg-vis")||3);for(var d=t.find(".img-block .item").hide(),e=0;i>e;e++)d.eq(e).fadeIn("fast")});
+	$(".line-gallery").each(function(a){var s=$(this),t=$("body").eq(0),i=3;t.hasClass("window-width-xs")?i=s.attr("data-xs-vis")||1:t.hasClass("window-width-sm")?i=s.attr("data-sm-vis")||2:t.hasClass("window-width-md")?i=s.attr("data-md-vis")||3:t.hasClass("window-width-lg")&&(i=s.attr("data-lg-vis")||3);for(var d=s.find(".img-block .item").hide(),w=0;i>w;w++)d.eq(w).fadeIn("fast")});
 
 	
 });
