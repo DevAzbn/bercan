@@ -1,6 +1,5 @@
 
 	$('.b-top-header').each(function(index){
-		event.preventDefault();
 		
 		var block = $(this);
 		

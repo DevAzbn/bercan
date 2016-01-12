@@ -1,6 +1,5 @@
 
 	$('.b-sale-leader-list').each(function(index){
-		event.preventDefault();
 		
 		var block = $(this);
 		var menu = block.find('.menu ul');

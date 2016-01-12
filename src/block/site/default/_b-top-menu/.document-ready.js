@@ -1,6 +1,5 @@
 
 	$('.b-top-menu').each(function(index){
-		event.preventDefault();
 		
 		var block = $(this);
 		
