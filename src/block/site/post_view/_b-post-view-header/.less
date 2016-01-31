@@ -1,0 +1,77 @@
+.b-post-view-header {
+	
+	.post-view-header-info {
+		position:relative;
+		
+		.title-block {
+			position:absolute;
+			left:0;
+			top:0;
+			#site.bg(rgba(147, 0, 0, 0.6));
+			#site.w(50%);
+			#site.h(100%);
+			
+			.title {
+				position:absolute;
+				left:0;
+				top:50px;
+				margin:0 50px;
+				#site.color(#ffffff);
+				#site.size(3em);
+				#site.bold();
+				#site.ff(asp);
+				#site.lh(1.25em);
+			}
+			.created_at {
+				position:absolute;
+				left:0;
+				bottom:50px;
+				margin:0 50px;
+				
+				.day {
+					#site.size(6em);
+					#site.bold();
+				}
+				.month {
+					#site.size(1.2em);
+					#site.uppercase();
+				}
+			}
+			.info {
+				position:absolute;
+				right:0;
+				bottom:50px;
+				margin:0 50px;
+				
+				.author {
+					#site.size(1.3em);
+					
+					a {
+						#site.color(#ffffff);
+						
+						&:hover {
+							#site.underline();
+						}
+					}
+				}
+				.likes {
+					#site.size(1.4em);
+					text-align:right;
+					
+					span {
+						display:inline-block;
+						#site.w(18px);
+						#site.h(16px);
+						margin-top:1.5em;
+						background-position:center center;
+						background-repeat:no-repeat;
+						background-image:url('@{url-path-img}/post-view-info-likes.png');
+					}
+				}
+			}
+			
+		}
+		
+	}
+	
+}

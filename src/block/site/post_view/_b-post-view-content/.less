@@ -1,0 +1,72 @@
+.b-post-view-content {
+	margin:4em 0 4em;
+	
+	.left-col {
+		
+		.how-add-post-and-get-prize {
+			display:block;
+			position:relative;
+			#site.h(23em);
+			#site.underline(none);
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-image:url('@{url-path-img}/how-add-post-and-get-prize.jpg');
+			
+			&:hover {
+				.more {
+					#site.underline();
+				}
+			}
+			
+			.title {
+				#site.ff(asp);
+				#site.size(2.4em);
+				#site.uppercase();
+				#site.color(#ffffff);
+				display:block;
+				position:absolute;
+				left:0;
+				top:40px;
+				padding:0 20px;
+			}
+			.more {
+				#site.size(1.4em);
+				#site.color(#ffffff);
+				display:block;
+				position:absolute;
+				left:0;
+				bottom:40px;
+				padding:0 20px;
+			}
+		}
+		
+	}
+	
+	.right-col {
+		
+		.tag-line {
+			background-position:left 0.25em;
+			background-repeat:no-repeat;
+			background-image:url('@{url-path-img}/b-product-content-tag-line.png');
+			#site.size(1.2em);
+			padding-left:2.5em;
+			padding:0em 0 2em 2.5em;
+			margin:2em 7em 0 3.5em;
+			border-bottom:1px #a6a6a6 solid;
+			
+			a {
+				display:inline-block;
+				#site.color(#6f6f6f);
+				#site.underline();
+				margin-right:1.5em;
+				
+				&:hover {
+					#site.underline(none);
+				}
+			}
+		}
+		
+	}
+	
+}
