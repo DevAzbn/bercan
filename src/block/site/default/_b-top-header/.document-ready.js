@@ -10,6 +10,8 @@
 			event.preventDefault();
 			var btn = $(this);
 			
+			$('.b-top-menu').trigger('hide-drd-menu');
+			
 			if(menubtn.hasClass('active')) {
 				menubtn.trigger('click')
 			}
@@ -21,6 +23,8 @@
 		menubtn.on('click', function(event){
 			event.preventDefault();
 			var btn = $(this);
+			
+			$('.b-top-menu').trigger('hide-drd-menu');
 			
 			if(cartbtn.hasClass('active')) {
 				cartbtn.trigger('click')
