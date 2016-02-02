@@ -46,6 +46,34 @@
 				padding:0.7em 2em;
 				margin-right:10px;
 			}
+			
+			.product-list-type {
+				display:inline-block;
+				margin-left:5em;
+				
+				.product-list-type-grid, .product-list-type-list {
+					display:inline-block;
+					background-position:center center;
+					background-repeat:no-repeat;
+					#site.w(12px);
+					#site.h(12px);
+					margin-left:0.4em;
+				}
+				.product-list-type-grid {
+					background-image:url('@{url-path-img}/product-list-type-grid.png');
+					
+					&.active {
+						background-image:url('@{url-path-img}/product-list-type-grid.png');
+					}
+				}
+				.product-list-type-list {
+					background-image:url('@{url-path-img}/product-list-type-list.png');
+					
+					&.active {
+						background-image:url('@{url-path-img}/product-list-type-list.png');
+					}
+				}
+			}
 		}
 	}
 	

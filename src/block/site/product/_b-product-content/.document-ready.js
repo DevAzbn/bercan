@@ -3,7 +3,8 @@
 		
 		var block = $(this);
 		
-		$('.photos .other-photos .item').on('click', function(event){
+		
+		block.find('.photos .other-photos .item').on('click', function(event){
 			event.preventDefault();
 			
 			var btn = $(this);
@@ -12,7 +13,8 @@
 			btn.closest('.photos').find('.main-photo img').attr('src', src);
 		});
 		
-		$('.main-info .header ul li a').on('click', function(event){
+		
+		block.find('.main-info .header ul li a').on('click', function(event){
 			event.preventDefault();
 			
 			var btn = $(this);
@@ -22,5 +24,52 @@
 			$('.main-info .info-block').removeClass('active').filter(btn.attr('href')).addClass('active');
 			
 		}).eq(0).trigger('click');
+		
+		
+		block.find('.order-info .btn-cont .like-btn').on('click', function(event){
+			event.preventDefault();
+			
+			var btn = $(this);
+			var product = btn.attr('data-product_id');
+			
+			btn.toggleClass('active');
+			
+		});
+		
+		
+		block.find('.order-info .boxing a.item').on('click', function(event){
+			event.preventDefault();
+			
+			var btn = $(this);
+			var product = btn.closest('.boxing').attr('data-product_id');
+			var boxing = btn.attr('data-product_boxing');
+			var real = btn.attr('data-boxing_cost');
+			var old = btn.attr('data-boxing_oldcost');
+			
+			block.find('.order-info .cost-cont .real span').html(real);
+			block.find('.order-info .cost-cont .old span').html(old);
+			
+			block.find('.order-info .cost-cont').attr('data-product_boxing', boxing);
+			
+			block.find('.order-info .boxing a.item').removeClass('active');
+			btn.addClass('active');
+			
+		}).eq(0).trigger('click');
+		
+		
+		block.find('.order-info .taste a.item').on('click', function(event){
+			event.preventDefault();
+			
+			var btn = $(this);
+			var product = btn.closest('.taste').attr('data-product_id');
+			var taste = btn.attr('data-product_taste');
+			
+			block.find('.order-info .cost-cont').attr('data-product_taste', taste);
+			
+			block.find('.order-info .taste a.item').removeClass('active');
+			btn.addClass('active');
+			
+		}).eq(0).trigger('click');
+		
 	});
 	

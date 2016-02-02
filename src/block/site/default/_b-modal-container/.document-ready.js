@@ -4,7 +4,7 @@
 		
 		var mb = block.find('.modal-block').eq(0);
 		var wc = block.find('.white-container').eq(0);
-		var title = block.find('.modal-title .content').eq(0);
+		//var title = block.find('.modal-title .content').eq(0);
 		
 		var hide_modal = block.find('.hide-modal');
 		
@@ -42,7 +42,7 @@
 			lastactive = $('.b-modal-container .item.active');
 			$('.b-modal-container .item').removeClass('active');
 			$(this).addClass('active');
-			title.html($(this).attr('data-title'));
+			//title.html($(this).attr('data-title'));
 			$(this).closest('.b-modal-container').trigger('setActive');
 		});
 		
@@ -74,6 +74,20 @@
 			event.stopPropagation();
 			
 			$('.b-modal-container .item.active').trigger('setPassive');
+		});
+		
+		$(document.body).on('click', '.b-modal-fastlook', function(event){
+			event.preventDefault();
+			event.stopPropagation();
+			
+			var btn = $(this);
+			var id = btn.attr('data-product_id');
+			var el = $('.b-modal-container .item').filter('#modal-fastlook');
+			if(el.size() > 0) {
+				el.trigger('setActive');
+			} else {
+				el.trigger('setPassive');
+			}
 		});
 		
 	});

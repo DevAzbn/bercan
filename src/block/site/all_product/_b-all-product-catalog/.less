@@ -224,6 +224,7 @@
 						height:18px;
 						
 						.text {
+							.cleardefault();
 							text-align:center;
 							#site.size(1.3em);
 							#site.color(#8f0f0f);
@@ -232,6 +233,7 @@
 							transition:all @trans-speed * 1.5 ease;
 							transform-origin:center center;
 							transform:scale(0);
+							cursor:pointer;
 						}
 					}
 				}
@@ -262,6 +264,9 @@
 						#site.size(1.6em);
 						#site.bold();
 					}
+					.preview-block {
+						display:none;
+					}
 				}
 				
 				&:hover {
@@ -282,6 +287,86 @@
 				}
 				
 			}
+			
+			
+			&.as-list {
+				
+				.item {
+					width:100% !important;
+					border-top:1px #c6c6c6 solid;
+					
+					.image-cont {
+						float:left;
+						width:33%;
+						
+						.look, .fast-look {
+							display:none;
+						}
+					}
+					
+					.border {
+						display:none;
+					}
+					
+					.info {
+						margin:3em auto 3em;
+						width:65%;
+						float:right;
+						
+						.title {
+							#site.size(1.6em);
+							#site.lh(1.5em);
+							#site.color(#1d1d1d);
+							#site.uppercase(none);
+							#site.bold();
+							float:left;
+							width:75%;
+						}
+						.cost {
+							font-family:gb;
+							float:right;
+							#site.color(#8f0f0f);
+							#site.size(1.8em);
+							#site.bold();
+						}
+						.preview-block {
+							display:block;
+							clear:both;
+							width:75%;
+							
+							.text {
+								margin:5em 0 1em;
+								#site.color(#1d1d1d);
+								#site.size(1.3em);
+								#site.lh(1.5em);
+							}
+							.buttons {
+								#site.size(1.4em);
+								padding:1em 0;
+								
+								.pre-look {
+									padding:0.7em 2em;
+								}
+								.pre-fast-look {
+									padding:0.7em 2em;
+									#site.color(#8f0e0e);
+									#site.underline();
+								}
+							}
+						}
+					}
+					
+					&:hover {
+						box-shadow: none;
+						
+						.image-cont {
+							
+						}
+					}
+				}
+				
+			}
+			
 		}
 		
 	}

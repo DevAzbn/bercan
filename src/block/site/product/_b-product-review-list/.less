@@ -1,0 +1,68 @@
+.b-product-review-list {
+	margin:0em 1em;
+	
+	.item {
+		position:relative;
+		padding:2em 0;
+		margin:2em 0;
+		
+		&:first-child {
+			padding:1em 0 3em;
+			margin:0em 0 2em;
+		}
+		
+		&:before {
+			content:'';
+			position:absolute;
+			bottom:1px;
+			left:3em;
+			#site.h(1px);
+			#site.w(19em);
+			#site.bg(#d1d1d1);
+		}
+		
+		.comment-icon {
+			#site.w(8em);
+			#site.h(8em);
+			border-radius:50%;
+			margin-left:auto;
+			margin-right:auto;
+			display:block;
+		}
+		
+		.info {
+			#site.lh(2em);
+			
+			.name {
+				display:inline-block;
+				#site.size(1.4em);
+				#site.color(#1d1d1d);
+				#site.ff(gb);
+			}
+			.created_at {
+				display:inline-block;
+				#site.size(1.3em);
+				#site.color(#9a9a9a);
+				#site.bold();
+				margin-left:1em;
+			}
+		}
+		
+		.text {
+			#site.size(1.4em);
+			#site.color(#1d1d1d);
+			#site.lh(1.4em);
+			margin-top:0.5em;
+		}
+		
+	}
+	
+	.b-order-content.b-review-form {
+		margin:0em 3em;
+		
+		.left-cont .order-form {
+			max-width: 100%;
+		}
+	}
+	
+}

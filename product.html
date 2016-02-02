@@ -191,7 +191,7 @@
 				</div>
 				<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 f-box " >
 					<ul class="login-ul" >
-						<li class="login" ><a class="grey-link" href="" >Войти на сайт</a></li>
+						<li class="login" ><a class="grey-link b-modal-btn" href="#modal-login-form" >Войти на сайт</a></li>
 						<li class="reg" ><a class="grey-link" href="" >Регистрация</a></li>
 					</ul>
 				</div>
@@ -212,23 +212,33 @@
 			
 			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
 				<div class="menu-list d-t hp100" >
-					<div class="d-t-c w240 pd40" >
+					<div class="d-t-c w260 pd40" >
 						<a class="" href="/" ><img class="image resp " src="img/b-top-menu-logo.png" /></a>
 					</div>
 					<div class="d-t-c align-center pd40 item" >
 						<a class="m-item" href="#sport-pit" >Спортивное питание</a>
+						<span class="before" ><span class="after" ></span></span>
+						
 					</div>
 					<div class="d-t-c align-center pd40 item" >
 						<a class="m-item" href="#accessuar" >Аксессуары</a>
+						<span class="before" ><span class="after" ></span></span>
+						
 					</div>
 					<div class="d-t-c align-center pd40 item" >
 						<a class="m-item" href="#ekip" >Экипировка</a>
+						<span class="before" ><span class="after" ></span></span>
+						
 					</div>
 					<div class="d-t-c align-center pd40 item" >
 						<a class="m-item" href="#odezh" >Одежда</a>
+						<span class="before" ><span class="after" ></span></span>
+						
 					</div>
 					<div class="d-t-c align-center pd40 item" >
 						<a class="m-item" href="#proizv" >Производители</a>
+						<span class="before" ><span class="after" ></span></span>
+						
 					</div>
 					<div class="d-t-c search-icon wp005 align-right " >
 						<div class="search-block" ></div>
@@ -841,32 +851,32 @@
 		
 		<div class="boxing" data-product_id="1" >
 			<div class="title" >Упаковка</div>
-			<a class="item active" href="#" >2275 г.</a>
-			<a class="item" href="#" >1350 г.</a>
-			<a class="item" href="#" >1350 г.</a>
+			<a class="item active" href="#" data-product_boxing="1" data-boxing_cost="4 990" data-boxing_oldcost="5 560" >2275 г.</a>
+			<a class="item" href="#" data-product_boxing="2" data-boxing_cost="14 990" data-boxing_oldcost="15 560" >1350 г.</a>
+			<a class="item" href="#" data-product_boxing="3" data-boxing_cost="24 990" data-boxing_oldcost="25 560" >1350 г.</a>
 		</div>
 		
 		<div class="taste" data-product_id="1" >
 			<div class="title" >Вкус</div>
-			<a class="item active" href="#" >Ваниль</a>
-			<a class="item" href="#" >Шоколад</a>
-			<a class="item" href="#" >Печенье</a>
-			<a class="item" href="#" >Банан</a>
-			<a class="item" href="#" >Апельсин</a>
-			<a class="item" href="#" >Вишня</a>
-			<a class="item" href="#" >шоколадный пирог</a>
+			<a class="item active" href="#" data-product_taste="1" >Ваниль</a>
+			<a class="item" href="#" data-product_taste="2" >Шоколад</a>
+			<a class="item" href="#" data-product_taste="3" >Печенье</a>
+			<a class="item" href="#" data-product_taste="4" >Банан</a>
+			<a class="item" href="#" data-product_taste="5" >Апельсин</a>
+			<a class="item" href="#" data-product_taste="6" >Вишня</a>
+			<a class="item" href="#" data-product_taste="7" >шоколадный пирог</a>
 		</div>
 		
-		<div class="cost-cont" data-product_id="1" >
-			<div class="real" >4 990 .-</div>
-			<div class="old" >5 560</div>
+		<div class="cost-cont" data-product_id="1" data-product_boxing="1" data-product_taste="1" >
+			<div class="real" ><span>4 990</span> .-</div>
+			<div class="old" ><span>5 560</span></div>
 		</div>
 		
 		<div class="btn-cont" >
-			<a class="buy-btn on-hover ch-color btn r2w" href="#buy" data-product_id="1" >Купить</a>
-			<a class="like-btn " href="#like" >Мне нравится</a>
+			<a class="buy-btn on-hover ch-color btn r2w b-modal-btn" href="#modal-product-subsribe" data-product_id="1" >Купить</a>
+			<a class="like-btn " href="#like" data-product_id="1" >Мне нравится</a>
 			<br />
-			<a class="one-click-btn " href="#one-click" data-product_id="1" >Купить в 1 клик</a>
+			<a class="one-click-btn  b-modal-btn" href="#modal-fastbuy-product" data-product_id="1" >Купить в 1 клик</a>
 		</div>
 		
 		<div class="tag-line" >
@@ -994,12 +1004,202 @@
 			</div>
 			
 			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 info-block" id="review" data-product_id="1" >
-				<div class="content sandbox" >
+				<div class=" " >
 					
-					<p>
-						ISO-100 является сывороточным белком с минимальным содержанием углеводных компонентов. Этот вкусный и питательный продукт выработан из 100%-го изолята сывороточного белка.
-						Питание обеспечивает сохранения оптимального баланса азота. Подобный показатель необходимо поддерживать на этапе прохождения  интенсивных тренировок.
-					</p>
+					<div class="b-product-review-list " >
+	
+	<div class="adaptive-block grid grid-12 " >
+		
+		<div class="grid-row item" >
+			
+			<div class="clmn-2 clmn-xs-2 clmn-sm-2 clmn-md-2 clmn-lg-2 " >
+				
+				<img class="comment-icon" src="img/b-post-view-comment-img.png" />
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clmn-10 clmn-xs-10 clmn-sm-10 clmn-md-10 clmn-lg-10 " >
+				
+				<div class="info" >
+					<span class="name" >Серега Культурист</span>
+					<span class="created_at" >24 октября</span>
+				</div>
+				<div class="text" >
+					Ребята, кто хочет набрать сухую массу, с минимальным процентом жира,берите Iso-100!!! Это реально работает...месяца 4 на исо-100 и результат на лицо!;-))
+				</div>
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clear" ></div>
+		
+		</div>
+		
+		<div class="grid-row item" >
+			
+			<div class="clmn-2 clmn-xs-2 clmn-sm-2 clmn-md-2 clmn-lg-2 " >
+				
+				<img class="comment-icon" src="img/b-post-view-comment-img.png" />
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clmn-10 clmn-xs-10 clmn-sm-10 clmn-md-10 clmn-lg-10 " >
+				
+				<div class="info" >
+					<span class="name" >Серега Культурист</span>
+					<span class="created_at" >24 октября</span>
+				</div>
+				<div class="text" >
+					Ребята, кто хочет набрать сухую массу, с минимальным процентом жира,берите Iso-100!!! Это реально работает...месяца 4 на исо-100 и результат на лицо!;-))
+				</div>
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clear" ></div>
+		
+		</div>
+		
+		<div class="grid-row item" >
+			
+			<div class="clmn-2 clmn-xs-2 clmn-sm-2 clmn-md-2 clmn-lg-2 " >
+				
+				<img class="comment-icon" src="img/b-post-view-comment-img.png" />
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clmn-10 clmn-xs-10 clmn-sm-10 clmn-md-10 clmn-lg-10 " >
+				
+				<div class="info" >
+					<span class="name" >Серега Культурист</span>
+					<span class="created_at" >24 октября</span>
+				</div>
+				<div class="text" >
+					Ребята, кто хочет набрать сухую массу, с минимальным процентом жира,берите Iso-100!!! Это реально работает...месяца 4 на исо-100 и результат на лицо!;-))
+				</div>
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clear" ></div>
+		
+		</div>
+		
+		<div class="grid-row item" >
+			
+			<div class="clmn-2 clmn-xs-2 clmn-sm-2 clmn-md-2 clmn-lg-2 " >
+				
+				<img class="comment-icon" src="img/b-post-view-comment-img.png" />
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clmn-10 clmn-xs-10 clmn-sm-10 clmn-md-10 clmn-lg-10 " >
+				
+				<div class="info" >
+					<span class="name" >Серега Культурист</span>
+					<span class="created_at" >24 октября</span>
+				</div>
+				<div class="text" >
+					Ребята, кто хочет набрать сухую массу, с минимальным процентом жира,берите Iso-100!!! Это реально работает...месяца 4 на исо-100 и результат на лицо!;-))
+				</div>
+				
+				<div class="clear" ></div>
+			</div>
+			
+			<div class="clear" ></div>
+		
+		</div>
+		
+		
+	</div>
+	
+	
+	<div class="b-order-content b-review-form" >
+					
+					<div class="adaptive-block grid grid-12 " >
+						<div class="grid-row" >
+							
+							<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 form-title" >
+								Оставить комментарий
+							</div>
+							
+							<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 left-cont" >
+								
+								<div class="order-form" >
+									
+									<div class="adaptive-block grid grid-12 " >
+										<div class="grid-row " >
+											
+											<div class="clmn-6 clmn-xs-6 clmn-sm-6 clmn-md-6 clmn-lg-6 " >
+											
+												<div class="input-item name" >
+													
+													<input placeholder="ФИО *" />
+													
+													<span class="icon" ></span>
+													
+												</div>
+											
+											</div>
+											
+											<div class="clmn-6 clmn-xs-6 clmn-sm-6 clmn-md-6 clmn-lg-6 " >
+												
+												<div class="input-item email" >
+													
+													<input placeholder="E-mail *" />
+													
+													<span class="icon" ></span>
+													
+												</div>
+											
+											</div>
+											
+											<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+												
+												<div class="input-item comment" >
+													
+													<input placeholder="Текст комментария (не более 1000 символов) *" />
+													
+													<span class="icon" ></span>
+													
+												</div>
+											
+											</div>
+											
+											<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+												
+												<div class="btn-item " >
+													
+													<input class="on-hover ch-color btn w2r" type="submit" value="Отправить" />
+													
+												</div>
+											
+											</div>
+											
+											<div class="clear" ></div>
+										
+										</div>
+									</div>
+									
+								</div>
+								
+							</div>
+							
+							<div class="clear" ></div>
+						
+						</div>
+					</div>
+					
+				</div>
+	
+	
+</div>
+
+
 					
 				</div>
 			</div>
@@ -1077,7 +1277,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1091,7 +1291,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1105,7 +1305,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1119,7 +1319,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1133,7 +1333,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1147,7 +1347,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1161,7 +1361,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1175,7 +1375,7 @@
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
-					<div class="fast-look" ><div class="text" >Быстрый просмотр</div></div>
+					<div class="fast-look" ><div class="text b-modal-fastlook" data-product_id="1" >Быстрый просмотр</div></div>
 				</a>
 				<div class="border" ></div>
 				<div class="info" >
@@ -1200,41 +1400,42 @@
 			
 			<div class="adaptive-block margin-center grid grid-12  " >
 				
-				<div class="grid-row item" id="modal-product-subsribe" data-title="Подписка на товар" >
+				<div class="grid-row item" id="modal-product-subsribe" data-title="Поступление товара" >
 					
 					<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
-						<div class="content white-container margin-center" >
+						<div class="content white-container small formed" >
 							<a class="hide-modal " href="#close" ></a>
-							<div class="title" >
-								Поступление товара
-							</div>
-							<div class="text" >
-								Оставьте свой e-mail, и мы вышлем на него оповещение о поступлении товара
-							</div>
-							<div class="align-center modal-btn-cont" >
-								<a href="#close" class="on-hover ch-color btn w2r b-modal-hide-btn product-subsribe-btn" >Отправить</a>
-							</div>
-						</div>
-					</div>
-					
-					<div class="clear"></div>
-					
-				</div>
-				
-				<div class="grid-row item" id="modal-product-cert" data-title="Подписка на товар" >
-					
-					<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
-						<div class="content white-container margin-center" >
-							<a class="hide-modal " href="#close" ></a>
-							<div class="title" >
-								Запрос сертификата
-							</div>
-							<div class="text" >
-								Оставьте свой e-mail, и мы вышлем на него сертификат подлинности продукции
-							</div>
-							<div class="align-center modal-btn-cont" >
-								<a href="#close" class="on-hover ch-color btn w2r b-modal-hide-btn product-subsribe-btn" >Отправить</a>
-							</div>
+							
+							<form >
+								
+								<div class="m-title" >
+									Поступление товара
+								</div>
+								
+								<div class="m-preview" >
+									Оставьте свой e-mail, и мы вышлем на него оповещение о поступлении товара
+								</div>
+								
+								<div class="m-form-cont" >
+									
+									<div class="input-item email" >
+										
+										<input placeholder="Ваш e-mail" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+								</div>
+								
+								<div class="m-btn-cont" >
+									
+									<input class="on-hover ch-color btn w2r" type="submit" />
+									
+								</div>
+								
+							</form>
+							
 						</div>
 					</div>
 					
@@ -1246,6 +1447,131 @@
 			
 		</div>
 	</div>
+	
+	
+	
+	
+	
+	<div class="b-modal-container " >
+		<div class="modal-block" >
+			
+			<div class="adaptive-block margin-center grid grid-12  " >
+				
+				<div class="grid-row item" id="modal-product-cert" data-title="Запрос сертификата" >
+					
+					<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+						<div class="content white-container small formed" >
+							<a class="hide-modal " href="#close" ></a>
+							
+							<form >
+								
+								<div class="m-title" >
+									Запрос сертификата
+								</div>
+								
+								<div class="m-preview" >
+									Оставьте свой e-mail, и мы вышлем на него сертификат подлинности продукции
+								</div>
+								
+								<div class="m-form-cont" >
+									
+									<div class="input-item email" >
+										
+										<input placeholder="Ваш e-mail" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+								</div>
+								
+								<div class="m-btn-cont" >
+									
+									<input class="on-hover ch-color btn w2r" type="submit" />
+									
+								</div>
+								
+							</form>
+							
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	<div class="b-modal-container " >
+		<div class="modal-block" >
+			
+			<div class="adaptive-block margin-center grid grid-12  " >
+				
+				<div class="grid-row item" id="modal-fastbuy-product" data-title="Быстрая покупка" >
+					
+					<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+						<div class="content white-container small formed" >
+							<a class="hide-modal " href="#close" ></a>
+							
+							<form >
+								
+								<div class="m-title" >
+									Быстрая покупка
+								</div>
+								
+								<div class="m-preview" >
+									Оставьте свои данные, и наши менеджеры свяжутся с вами для оформления заказа в ближайшее время!
+								</div>
+								
+								<div class="m-form-cont" >
+									
+									<div class="input-item name" >
+										
+										<input placeholder="Ваше имя" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+									<div class="input-item phone" >
+										
+										<input placeholder="Ваш телефон" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+								</div>
+								
+								<div class="m-btn-cont" >
+									
+									<input class="on-hover ch-color btn w2r" type="submit" />
+									
+								</div>
+								
+							</form>
+							
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+	</div>
+	
 	
 	
 	

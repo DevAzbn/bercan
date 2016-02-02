@@ -146,7 +146,7 @@
 				}
 				.item {
 					display:inline-block;
-					#site.size(1.4em);
+					#site.size(1.2em);
 					#site.color(#9e9e9e);
 					#site.lh(1.5em);
 					margin-right:1.5em;
@@ -203,6 +203,7 @@
 					padding:0.7em 2em;
 					min-width:160px;
 					text-align:center;
+					cursor:pointer;
 				}
 				
 				.like-btn {
@@ -211,12 +212,18 @@
 					padding:0.7em 2em;
 					margin-left:2em;
 					#site.size(1.4em);
+					cursor:pointer;
 					background-position:left center;
 					background-repeat:no-repeat;
 					background-image:url('@{url-path-img}/b-product-header-like.png');
 					
 					&:hover {
 						#site.underline();
+					}
+					
+					&.active {
+						#site.color(#870000);
+						background-image:url('@{url-path-img}/b-product-header-liked.png');
 					}
 				}
 				
@@ -228,6 +235,7 @@
 					min-width:160px;
 					text-align:center;
 					margin-top:1em;
+					cursor:pointer;
 					
 					&:hover {
 						#site.underline(none);

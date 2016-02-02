@@ -8,6 +8,10 @@
 		var pblock = pritem.find('.point-block');
 		var variants = pritem.find('.item-variant');
 		
+		block.on('mouseleave', function(event){
+			block.removeClass('active');
+		});
+		
 		pblock.find('.point').on('click', function(event){
 			event.preventDefault();
 			event.stopPropagation();
