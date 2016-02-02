@@ -1,0 +1,130 @@
+.b-modal-container {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	#site.bg(rgba(0, 0, 0, 0));
+	display:none;
+	z-index:-10;
+	transition:all @trans-speed ease;
+	opacity:0;
+	
+	&.active {
+		display:block;
+		z-index:200;
+		opacity:1;
+		#site.bg(rgba(0, 0, 0, 0.8));
+	}
+	
+	.modal-block {
+		position:absolute;
+		left:0;
+		top:100px;
+		width:100%;
+		z-index:200;
+		transition:all @trans-speed ease;
+		
+		.white-container {
+			#site.bg(#ffffff);
+			position:relative;
+			z-index:250;
+			
+			@media @media-size-xs {
+				& {
+					
+				}
+			}
+			@media @media-size-sm {
+				& {
+					
+				}
+			}
+			@media @media-size-md {
+				& {
+					
+				}
+			}
+			@media @media-size-lg {
+				& {
+					
+				}
+			}
+			
+			.hide-modal {
+				position:absolute;
+				right:2em;
+				top:2em;
+				width:15px;
+				height:15px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-size:cover;
+				background-image: url('@{url-path-img}/fecss/modal-block-container-hide-modal.png');
+			}
+		}
+		
+		.item {
+			display:none;
+			
+			&.active {
+				display:block;
+			}
+		}
+		
+		.modal-title {
+			
+			.text {
+				text-align:center;
+				#site.color(#ecbd2d);
+				overflow:hidden;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+				
+				@media @media-size-xs {
+					& {
+						padding-top:1em;
+						#site.size(2em);
+						white-space:initial;
+						text-overflow:initial;
+						margin-bottom:3em;
+					}
+				}
+				
+				@media @media-size-sm {
+					& {
+						padding-top:1em;
+						#site.size(2em);
+						white-space:initial;
+						text-overflow:initial;
+						margin-bottom:3em;
+					}
+				}
+				
+				@media @media-size-md {
+					& {
+						padding-top:0.5em;
+						#site.size(2em);
+						white-space:initial;
+						text-overflow:initial;
+						margin-bottom:3em;
+					}
+				}
+				
+				@media @media-size-lg {
+					& {
+						padding-top:0.5em;
+						#site.size(2em);
+						white-space:initial;
+						text-overflow:initial;
+						margin-bottom:3em;
+					}
+				}
+				
+			}
+			
+		}
+	}
+	
+}
+	

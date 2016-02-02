@@ -38,7 +38,7 @@
 
 
 <script src="js/jquery.min.js" ></script>
-<script src="js/fecss.js" ></script>
+<!--<script src="js/fecss.js" ></script>-->
 <script src="js/storage.js" ></script>
 
 <!--<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
@@ -51,6 +51,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
 -->
 
+<script src="js/shop.js" ></script>
 <script src="js/document-ready.js" ></script>
 
 
@@ -87,7 +88,7 @@
 						<a href="http://youtube.com/" ><span class="bg-icon yt" ></span></a>
 					</div>
 					<div class="d-t-c align-right" >
-						<a class="cart-btn" href="#cart" ><span class="bg-icon cart" ></span>Корзина (29)</a>
+						<a class="cart-btn" href="#cart" ><span class="bg-icon cart" ></span>Корзина (<span class="b-top-cart-counter" >0</span>)</a>
 					</div>
 				</div>
 			</div>
@@ -97,14 +98,14 @@
 		</div>
 		
 			
-	<div class="fluid-block zi zi-top b-top-cart" >
+	<div class="fluid-block zi zi-top b-top-cart" data-sum="0" data-icount="0" data-acount="0" >
 		<div class="adaptive-block grid grid-12 " >
 			<div class="grid-row" >
 				
 				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 cart-container" >
 					<div class="d-t" >
 						
-						<div class="d-t-r position" >
+						<div class="d-t-r position" data-cost="2095" data-count="1" data-product_id="1" >
 							<div class="d-t-c index" >01</div>
 							<div class="d-t-c img" ><img class="image resp" src="img/b-top-header-cart-product.png" /></div>
 							<div class="d-t-c title" >Dymatize Nutrition ISO-100</div>
@@ -115,11 +116,11 @@
 									<a class="u" href="" ><span class="arrow top" ></span></a>
 								</div>
 							</div>
-							<div class="d-t-c sum" >2 095 .-</div>
+							<div class="d-t-c sum" ><span>2 095</span> .-</div>
 							<div class="d-t-c delete" ><a href="" ><img src="img/b-top-header-cart-cross.png" /></a></div>
 						</div>
 						
-						<div class="d-t-r position" >
+						<div class="d-t-r position" data-cost="2095" data-count="1" data-product_id="2" >
 							<div class="d-t-c index" >02</div>
 							<div class="d-t-c img" ><img class="image resp" src="img/b-top-header-cart-product.png" /></div>
 							<div class="d-t-c title" >Dymatize Nutrition ISO-100</div>
@@ -130,7 +131,7 @@
 									<a class="u" href="" ><span class="arrow top" ></span></a>
 								</div>
 							</div>
-							<div class="d-t-c sum" >2 095 .-</div>
+							<div class="d-t-c sum" ><span>2 095</span> .-</div>
 							<div class="d-t-c delete" ><a href="" ><img src="img/b-top-header-cart-cross.png" /></a></div>
 						</div>
 						
@@ -140,7 +141,7 @@
 					
 					<div class="sum-cont" >
 						
-						<span class="text" >Итого</span> <span class="sum" >3 695 .-</span>
+						<span class="text" >Итого</span> <span class="sum" ><span>3 695</span> .-</span>
 						
 						<a class="order" href="#link" >Оформить заказ</a>
 						
@@ -729,7 +730,7 @@
 	
 </div>
 	
-	<div class="fluid-block b-product-content " >
+	<div class="fluid-block b-product-content " data-product_id="1" >
 	
 	<div class="adaptive-block grid grid-12 " >
 		<div class="grid-row" >
@@ -772,7 +773,7 @@
 				
 					<div class="title-cont" >Недавно просмотренные</div>
 					
-					<a href="#" class="item " >
+					<a href="#" class="item " data-product_id="2" >
 						<span class="img" >
 							<img src="img/b-product-content-main-photo.png" />
 						</span>
@@ -782,7 +783,7 @@
 						<div class="clear" ></div>
 					</a>
 					
-					<a href="#" class="item " >
+					<a href="#" class="item " data-product_id="3" >
 						<span class="img" >
 							<img src="img/b-product-content-main-photo.png" />
 						</span>
@@ -830,7 +831,7 @@
 						<div class="clmn-12 clmn-xs-7 clmn-sm-7 clmn-md-7 clmn-lg-7 " >
 							
 							
-<div class="order-info " >
+<div class="order-info " data-product_id="1" >
 	
 	<div class="info-cont " >
 		
@@ -838,14 +839,14 @@
 			Dymatize представляет ISO-100 с нулевым содержанием углеводов!
 		</div>
 		
-		<div class="boxing" >
+		<div class="boxing" data-product_id="1" >
 			<div class="title" >Упаковка</div>
 			<a class="item active" href="#" >2275 г.</a>
 			<a class="item" href="#" >1350 г.</a>
 			<a class="item" href="#" >1350 г.</a>
 		</div>
 		
-		<div class="taste" >
+		<div class="taste" data-product_id="1" >
 			<div class="title" >Вкус</div>
 			<a class="item active" href="#" >Ваниль</a>
 			<a class="item" href="#" >Шоколад</a>
@@ -856,16 +857,16 @@
 			<a class="item" href="#" >шоколадный пирог</a>
 		</div>
 		
-		<div class="cost-cont" >
+		<div class="cost-cont" data-product_id="1" >
 			<div class="real" >4 990 .-</div>
 			<div class="old" >5 560</div>
 		</div>
 		
 		<div class="btn-cont" >
-			<a class="buy-btn on-hover ch-color btn r2w" href="#buy" >Купить</a>
+			<a class="buy-btn on-hover ch-color btn r2w" href="#buy" data-product_id="1" >Купить</a>
 			<a class="like-btn " href="#like" >Мне нравится</a>
 			<br />
-			<a class="one-click-btn " href="#one-click" >Купить в 1 клик</a>
+			<a class="one-click-btn " href="#one-click" data-product_id="1" >Купить в 1 клик</a>
 		</div>
 		
 		<div class="tag-line" >
@@ -914,7 +915,7 @@
 	
 	<div class="meta-info-venzel" ></div>
 	
-	<a class="get-certif" href="#" >
+	<a class="get-certif b-modal-btn" href="#modal-product-cert" data-product_id="1" >
 		Запросить сертификат подлинности продукции
 	</a>
 	
@@ -935,7 +936,7 @@
 						<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
 							
 							
-<div class="main-info " >
+<div class="main-info " data-product_id="1" >
 	
 	<div class="fluid-block grid grid-12 " >
 		<div class="grid-row" >
@@ -944,16 +945,16 @@
 				<div class="header" >
 					<ul >
 						<li class="active" ><a href="#about" >Описание</a></li>
-						<li><a href="" >Компоненты</a></li>
-						<li><a href="" >Применение</a></li>
-						<li><a href="" >Отзывы (6)</a></li>
-						<li><a href="" >Оплата и доставка</a></li>
+						<li><a href="#component" >Компоненты</a></li>
+						<li><a href="#using" >Применение</a></li>
+						<li><a href="#review" >Отзывы (6)</a></li>
+						<li><a href="#delivery" >Оплата и доставка</a></li>
 						<span></span>
 					</ul>
 				</div>
 			</div>
 			
-			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 info-block" id="about" >
+			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 info-block" id="about" data-product_id="1" >
 				<div class="content sandbox" >
 					<img class="image resp margin-center " src="img/youtube-video-bg.jpg" />
 					
@@ -967,6 +968,50 @@
 						<br />
 						Добавка полностью безопасна для здоровья. Она прошла все необходимые лабораторные тесты и была признана соответствующей мировым стандартам качества. ISO-100 подходит широкому кругу лиц для достижения продолжительных спортивных результатов.
 					</p>
+				</div>
+			</div>
+			
+			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 info-block" id="component" data-product_id="1" >
+				<div class="content sandbox" >
+					
+					<p>
+						ISO-100 является сывороточным белком с минимальным содержанием углеводных компонентов. Этот вкусный и питательный продукт выработан из 100%-го изолята сывороточного белка.
+						Питание обеспечивает сохранения оптимального баланса азота. Подобный показатель необходимо поддерживать на этапе прохождения  интенсивных тренировок.
+					</p>
+					
+				</div>
+			</div>
+			
+			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 info-block" id="using" data-product_id="1" >
+				<div class="content sandbox" >
+					
+					<p>
+						ISO-100 является сывороточным белком с минимальным содержанием углеводных компонентов. Этот вкусный и питательный продукт выработан из 100%-го изолята сывороточного белка.
+						Питание обеспечивает сохранения оптимального баланса азота. Подобный показатель необходимо поддерживать на этапе прохождения  интенсивных тренировок.
+					</p>
+					
+				</div>
+			</div>
+			
+			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 info-block" id="review" data-product_id="1" >
+				<div class="content sandbox" >
+					
+					<p>
+						ISO-100 является сывороточным белком с минимальным содержанием углеводных компонентов. Этот вкусный и питательный продукт выработан из 100%-го изолята сывороточного белка.
+						Питание обеспечивает сохранения оптимального баланса азота. Подобный показатель необходимо поддерживать на этапе прохождения  интенсивных тренировок.
+					</p>
+					
+				</div>
+			</div>
+			
+			<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 info-block" id="delivery" data-product_id="1" >
+				<div class="content sandbox" >
+					
+					<p>
+						ISO-100 является сывороточным белком с минимальным содержанием углеводных компонентов. Этот вкусный и питательный продукт выработан из 100%-го изолята сывороточного белка.
+						Питание обеспечивает сохранения оптимального баланса азота. Подобный показатель необходимо поддерживать на этапе прохождения  интенсивных тренировок.
+					</p>
+					
 				</div>
 			</div>
 			
@@ -1028,7 +1073,7 @@
 	<div class="adaptive-block margin-center grid grid-12 flex" >
 		<div class="grid-row img-block " >
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="1" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1042,7 +1087,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="2" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1056,7 +1101,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="3" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1070,7 +1115,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="4" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1084,7 +1129,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="5" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1098,7 +1143,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="6" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1112,7 +1157,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="7" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1126,7 +1171,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="8" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1148,6 +1193,60 @@
 	</div>
 	
 </div>
+	
+		
+	<div class="b-modal-container " >
+		<div class="modal-block" >
+			
+			<div class="adaptive-block margin-center grid grid-12  " >
+				
+				<div class="grid-row item" id="modal-product-subsribe" data-title="Подписка на товар" >
+					
+					<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+						<div class="content white-container margin-center" >
+							<a class="hide-modal " href="#close" ></a>
+							<div class="title" >
+								Поступление товара
+							</div>
+							<div class="text" >
+								Оставьте свой e-mail, и мы вышлем на него оповещение о поступлении товара
+							</div>
+							<div class="align-center modal-btn-cont" >
+								<a href="#close" class="on-hover ch-color btn w2r b-modal-hide-btn product-subsribe-btn" >Отправить</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+					
+				</div>
+				
+				<div class="grid-row item" id="modal-product-cert" data-title="Подписка на товар" >
+					
+					<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+						<div class="content white-container margin-center" >
+							<a class="hide-modal " href="#close" ></a>
+							<div class="title" >
+								Запрос сертификата
+							</div>
+							<div class="text" >
+								Оставьте свой e-mail, и мы вышлем на него сертификат подлинности продукции
+							</div>
+							<div class="align-center modal-btn-cont" >
+								<a href="#close" class="on-hover ch-color btn w2r b-modal-hide-btn product-subsribe-btn" >Отправить</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	
 	
 	
 	

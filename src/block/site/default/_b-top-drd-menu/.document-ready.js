@@ -10,6 +10,7 @@
 		
 		pblock.find('.point').on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			var btn = $(this);
 			
 			variants.hide();

@@ -25,5 +25,21 @@
 			
 		});
 		
+		block.find('.cart-container .position').each(function(index) {
+			
+			var pos = $(this);
+			
+			pos.find('.delete').on('click', function(event){
+				event.preventDefault();
+				
+				var btn = $(this);
+				Shop.cart.delete_from_order(pos.attr('data-product_id'), function(data){
+					
+				});
+				
+			});
+			
+		});
+		
 	});
 	

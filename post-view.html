@@ -38,7 +38,7 @@
 
 
 <script src="js/jquery.min.js" ></script>
-<script src="js/fecss.js" ></script>
+<!--<script src="js/fecss.js" ></script>-->
 <script src="js/storage.js" ></script>
 
 <!--<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>-->
@@ -51,6 +51,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
 -->
 
+<script src="js/shop.js" ></script>
 <script src="js/document-ready.js" ></script>
 
 
@@ -88,7 +89,7 @@
 						<a href="http://youtube.com/" ><span class="bg-icon yt" ></span></a>
 					</div>
 					<div class="d-t-c align-right" >
-						<a class="cart-btn" href="#cart" ><span class="bg-icon cart" ></span>Корзина (29)</a>
+						<a class="cart-btn" href="#cart" ><span class="bg-icon cart" ></span>Корзина (<span class="b-top-cart-counter" >0</span>)</a>
 					</div>
 				</div>
 			</div>
@@ -98,14 +99,14 @@
 		</div>
 		
 			
-	<div class="fluid-block zi zi-top b-top-cart" >
+	<div class="fluid-block zi zi-top b-top-cart" data-sum="0" data-icount="0" data-acount="0" >
 		<div class="adaptive-block grid grid-12 " >
 			<div class="grid-row" >
 				
 				<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 cart-container" >
 					<div class="d-t" >
 						
-						<div class="d-t-r position" >
+						<div class="d-t-r position" data-cost="2095" data-count="1" data-product_id="1" >
 							<div class="d-t-c index" >01</div>
 							<div class="d-t-c img" ><img class="image resp" src="img/b-top-header-cart-product.png" /></div>
 							<div class="d-t-c title" >Dymatize Nutrition ISO-100</div>
@@ -116,11 +117,11 @@
 									<a class="u" href="" ><span class="arrow top" ></span></a>
 								</div>
 							</div>
-							<div class="d-t-c sum" >2 095 .-</div>
+							<div class="d-t-c sum" ><span>2 095</span> .-</div>
 							<div class="d-t-c delete" ><a href="" ><img src="img/b-top-header-cart-cross.png" /></a></div>
 						</div>
 						
-						<div class="d-t-r position" >
+						<div class="d-t-r position" data-cost="2095" data-count="1" data-product_id="2" >
 							<div class="d-t-c index" >02</div>
 							<div class="d-t-c img" ><img class="image resp" src="img/b-top-header-cart-product.png" /></div>
 							<div class="d-t-c title" >Dymatize Nutrition ISO-100</div>
@@ -131,7 +132,7 @@
 									<a class="u" href="" ><span class="arrow top" ></span></a>
 								</div>
 							</div>
-							<div class="d-t-c sum" >2 095 .-</div>
+							<div class="d-t-c sum" ><span>2 095</span> .-</div>
 							<div class="d-t-c delete" ><a href="" ><img src="img/b-top-header-cart-cross.png" /></a></div>
 						</div>
 						
@@ -141,7 +142,7 @@
 					
 					<div class="sum-cont" >
 						
-						<span class="text" >Итого</span> <span class="sum" >3 695 .-</span>
+						<span class="text" >Итого</span> <span class="sum" ><span>3 695</span> .-</span>
 						
 						<a class="order" href="#link" >Оформить заказ</a>
 						
@@ -1032,7 +1033,7 @@
 	<div class="adaptive-block grid grid-12 " >
 		<div class="grid-row" >
 			
-			<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
+			<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" data-post_id="1" >
 				<a href="" >
 					<img class="image resp item-image" src="img/b-last-post-list-item.jpg" />
 				</a>
@@ -1053,7 +1054,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
+			<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" data-post_id="2" >
 				<a href="" >
 					<img class="image resp item-image" src="img/b-last-post-list-item.jpg" />
 				</a>
@@ -1074,7 +1075,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
+			<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" data-post_id="3" >
 				<a href="" >
 					<img class="image resp item-image" src="img/b-last-post-list-item.jpg" />
 				</a>
@@ -1133,7 +1134,7 @@
 	<div class="adaptive-block margin-center grid grid-12 flex" >
 		<div class="grid-row img-block " >
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="1" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1147,7 +1148,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="2" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1161,7 +1162,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="3" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1175,7 +1176,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="4" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1189,7 +1190,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="5" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1203,7 +1204,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="6" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1217,7 +1218,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="7" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1231,7 +1232,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="8" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1259,7 +1260,7 @@
 	<div class="adaptive-block margin-center grid grid-12 flex" >
 		<div class="grid-row img-block " >
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="1" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1273,7 +1274,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="2" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1287,7 +1288,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="3" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1301,7 +1302,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="4" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1315,7 +1316,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="5" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1329,7 +1330,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="6" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1343,7 +1344,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="7" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1357,7 +1358,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="8" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1385,7 +1386,7 @@
 	<div class="adaptive-block margin-center grid grid-12 flex" >
 		<div class="grid-row img-block " >
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="1" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1399,7 +1400,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="2" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1413,7 +1414,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="3" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1427,7 +1428,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="4" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1441,7 +1442,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="5" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1455,7 +1456,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="6" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1469,7 +1470,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="7" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1483,7 +1484,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="8" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1511,7 +1512,7 @@
 	<div class="adaptive-block margin-center grid grid-12 flex" >
 		<div class="grid-row img-block " >
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="1" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1525,7 +1526,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="2" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1539,7 +1540,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="3" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1553,7 +1554,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="4" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1567,7 +1568,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="5" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1581,7 +1582,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="6" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1595,7 +1596,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="7" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1609,7 +1610,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="8" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1637,7 +1638,7 @@
 	<div class="adaptive-block margin-center grid grid-12 flex" >
 		<div class="grid-row img-block " >
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="1" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1651,7 +1652,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="2" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1665,7 +1666,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="3" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1679,7 +1680,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="4" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1693,7 +1694,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="5" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-1.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1707,7 +1708,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="6" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-2.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1721,7 +1722,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="7" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-3.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
@@ -1735,7 +1736,7 @@
 				</div>
 			</div>
 			
-			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" >
+			<div class="clmn-3 clmn-xs-3 clmn-sm-3 clmn-md-3 clmn-lg-3 item f-box" data-product_id="8" >
 				<a href="#link" class="image-cont" >
 					<img class="image resp margin-center" src="img/b-sale-leader-gallery-item-4.png" />
 					<div class="look" ><div class="rounded" >Посмотреть</div></div>
