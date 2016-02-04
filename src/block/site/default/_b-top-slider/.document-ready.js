@@ -4,7 +4,7 @@
 		var block = $(this);
 		
 		block.on('click', function(event){
-			event.preventDefault();
+			//event.preventDefault();
 			var btn = $(this);
 			
 			$('.b-top-menu').trigger('hide-drd-menu');
