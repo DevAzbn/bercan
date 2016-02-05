@@ -93,7 +93,7 @@
 			
 			var btn = $(this);
 			var id = btn.attr('data-product_id');
-			var el = $('.b-modal-container .item').filter('#modal-fastlook');
+			var el = $('.b-modal-container .item#modal-fastlook-' + id);
 			if(el.size() > 0) {
 				el.trigger('setActive');
 			} else {
