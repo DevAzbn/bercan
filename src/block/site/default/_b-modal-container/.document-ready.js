@@ -1,3 +1,5 @@
+	
+	//(function(block) {
 	$('.b-modal-container').each(function(index){
 		
 		var block = $(this);
@@ -9,7 +11,7 @@
 		var hide_modal = block.find('.hide-modal');
 		
 		var items = block.find('.item');
-		var lastactive;
+		//var lastactive;
 		
 		
 		block.on('setActive', function(event){
@@ -22,10 +24,12 @@
 		});
 		
 		block.on('click', function(event){
-			hide_modal.trigger('click');
+			event.preventDefault();
+			block.trigger('setPassive');
 		});
 		
 		hide_modal.on('click', function(event){
+			event.preventDefault();
 			block.trigger('setPassive');
 		});
 		
@@ -34,9 +38,7 @@
 			event.stopPropagation();
 		});
 		
-		
-		
-		
+	//})($('.b-modal-container'));
 	});
 		
 		
@@ -45,7 +47,7 @@
 			//event.preventDefault();
 			//event.stopPropagation();
 			
-			lastactive = $('.b-modal-container .item.active');
+			//lastactive = $('.b-modal-container .item.active');
 			//$('.b-modal-container .item').removeClass('active');
 			$(this).addClass('active');
 			//title.html($(this).attr('data-title'));
@@ -56,9 +58,9 @@
 			//event.preventDefault();
 			//event.stopPropagation();
 			$(this).removeClass('active').closest('.b-modal-container').trigger('setPassive');
-			if(lastactive.size()) {
-				lastactive.eq(0).trigger('setActive');
-			}
+			//if(lastactive.size()) {
+			//	lastactive.eq(0).trigger('setActive');
+			//}
 		});
 		
 		$('.b-modal-btn').on('click', function(event){

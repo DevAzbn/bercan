@@ -1,7 +1,8 @@
-
-	$('.b-top-cart').each(function(index){
+	
+	$(function() {
+	//$('.b-top-cart').each(function(index){
 		
-		var block = $(this);
+		var block = $('.b-top-cart');
 		
 		var items = block.find('.position');
 		
@@ -14,16 +15,16 @@
 			var _acnt = 0;
 			items.each(function(index){
 				var pos = $(this);
-				var count = parseInt(pos.attr('data-count'));
+				var amount = parseInt(pos.attr('data-amount'));
 				var cost = parseInt(pos.attr('data-cost'));
 				
-				_sum = _sum + (count * cost);
+				_sum = _sum + (amount * cost);
 				_icnt++;
-				_acnt = _acnt + count;
+				_acnt = _acnt + amount;
 			});
 			block.attr('data-sum', _sum);
-			block.attr('data-icount', _icnt);
-			block.attr('data-acount', _acnt);
+			block.attr('data-iamount', _icnt);
+			block.attr('data-aamount', _acnt);
 			block.find('.sum-cont .sum span').html(_sum);
 			cart_btn_counter.html(_icnt);
 		});
@@ -41,16 +42,19 @@
 			
 			pos.on('add-one-item', function(event){
 				event.preventDefault();
-				var count = parseInt(pos.attr('data-count'));
+				var amount = parseInt(pos.attr('data-amount'));
 				var cost = parseInt(pos.attr('data-cost'));
+				var orderitem = parseInt(pos.attr('data-orderitem'));
+				var cost_id = parseInt(pos.attr('data-cost_id'));
+				var product_id = parseInt(pos.attr('data-product_id'));
 				
-				count = count + 1;
+				amount = amount + 1;
 				
-				Shop.cart.set(pos.attr('data-product_id'), count, function(data){
-					pos.attr('data-count', count);
-					c.html(pos.attr('data-count'));
+				Shop.cart.set(product_id, cost_id, orderitem, amount, function(data){
+					pos.attr('data-amount', amount);
+					c.html(pos.attr('data-amount'));
 					
-					sum.html(count * cost);
+					sum.html(amount * cost);
 					
 					block.trigger('recalc-all-position');
 				});
@@ -59,20 +63,24 @@
 			
 			pos.on('delete-one-item', function(event){
 				event.preventDefault();
-				var count = parseInt(pos.attr('data-count'));
+				var amount = parseInt(pos.attr('data-amount'));
 				var cost = parseInt(pos.attr('data-cost'));
-				count = count - 1;
-				if(count < 0) {
-					count = 0;
+				var orderitem = parseInt(pos.attr('data-orderitem'));
+				var cost_id = parseInt(pos.attr('data-cost_id'));
+				var product_id = parseInt(pos.attr('data-product_id'));
+				
+				amount = amount - 1;
+				if(amount < 0) {
+					amount = 0;
 					
 					block.trigger('recalc-all-position');
 				} else {
 					
-					Shop.cart.set(pos.attr('data-product_id'), count, function(data){
-						pos.attr('data-count', count);
-						c.html(pos.attr('data-count'));
+					Shop.cart.set(product_id, cost_id, orderitem, amount, function(data){
+						pos.attr('data-amount', amount);
+						c.html(pos.attr('data-amount'));
 						
-						sum.html(count * cost);
+						sum.html(amount * cost);
 						
 						block.trigger('recalc-all-position');
 					});
@@ -83,15 +91,21 @@
 			
 			pos.on('delete-all-items', function(event){
 				event.preventDefault();
-				var count = 0;
+				var amount = 0;
 				var cost = parseInt(pos.attr('data-cost'));
+				var orderitem = parseInt(pos.attr('data-orderitem'));
+				var cost_id = parseInt(pos.attr('data-cost_id'));
+				var product_id = parseInt(pos.attr('data-product_id'));
 				
-				pos.attr('data-count', count);
-				c.html(pos.attr('data-count'));
+				Shop.cart.set(product_id, cost_id, orderitem, amount, function(data){
+					pos.attr('data-amount', amount);
+					c.html(pos.attr('data-amount'));
+					
+					sum.html(amount * cost);
+					
+					block.trigger('recalc-all-position');
+				});
 				
-				sum.html(count * cost);
-				
-				block.trigger('recalc-all-position');
 			});
 			
 			u.on('click', function(event){
@@ -112,11 +126,12 @@
 		});
 		
 		block.on('click', function(event){
-			event.preventDefault();
+			//event.preventDefault();
 			
 			var btn = $(this);
 			
 		});
-		
+	
 	});
+	//});
 	
