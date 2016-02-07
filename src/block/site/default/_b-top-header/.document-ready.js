@@ -8,6 +8,7 @@
 		
 		cartbtn.on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			var btn = $(this);
 			
 			$('.b-top-menu').trigger('hide-drd-menu');

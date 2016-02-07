@@ -103,6 +103,8 @@
 					
 					sum.html(amount * cost);
 					
+					pos.empty().remove();
+					
 					block.trigger('recalc-all-position');
 				});
 				
@@ -110,16 +112,19 @@
 			
 			u.on('click', function(event){
 				event.preventDefault();
+				event.stopPropagation();
 				pos.trigger('add-one-item');
 			});
 			
 			d.on('click', function(event){
 				event.preventDefault();
+				event.stopPropagation();
 				pos.trigger('delete-one-item');
 			});
 			
 			deletebtn.on('click', function(event){
 				event.preventDefault();
+				event.stopPropagation();
 				pos.trigger('delete-all-items');
 			});
 			

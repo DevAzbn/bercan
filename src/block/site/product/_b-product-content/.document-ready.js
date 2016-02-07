@@ -32,6 +32,10 @@
 			var btn = $(this);
 			var product = btn.attr('data-product_id');
 			
+			Shop.cart.like(product, function(data){
+				
+			});
+			
 			btn.toggleClass('active');
 			
 		});
@@ -70,6 +74,31 @@
 			btn.addClass('active');
 			
 		}).eq(0).trigger('click');
+		
+		
+		block.find('.order-info .btn-cont .addone-to-cart').on('click', function(event){
+			event.preventDefault();
+			
+			var btn = $(this);
+			var product = parseInt(btn.attr('data-product_id'));
+			var boxing = parseInt(block.find('.order-info .cost-cont').attr('data-product_boxing'));
+			var taste = parseInt(block.find('.order-info .cost-cont').attr('data-product_taste'));
+			
+			Shop.cart.addone(product, boxing, taste, function(data){
+				
+				btn.html('В корзине').toggleClass('r2w w2r disabled');
+				setTimeout(function(){
+					
+					btn.html('Купить').toggleClass('r2w w2r disabled');
+					
+				},2500);
+				
+			});
+			
+			btn.toggleClass('active');
+			
+		});
+		
 		
 	});
 	

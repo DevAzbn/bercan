@@ -5,11 +5,29 @@
 		padding-left:10px;
 		padding-right:10px;
 		
+		.item-image-cont {
+			position:relative;
+			
+			&:hover {
+				&:before {
+					content:'';
+					position:absolute;
+					width:100%;
+					height:220px;
+					left:0;
+					background-position:center center;
+					background-repeat:no-repeat;
+					background-image:url('@{url-path-img}/b-last-post-list-item-hover.png');
+				}
+			}
+		}
+		
 		.item-image {
 			margin-top:5em;
 			margin-left:auto;
 			margin-right:auto;
-			width:1000px;
+			width:360px;
+			height:220px;
 			max-width:100%;
 		}
 		.text {
