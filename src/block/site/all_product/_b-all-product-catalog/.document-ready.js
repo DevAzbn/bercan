@@ -16,5 +16,7 @@
 			
 		}).eq(0).trigger('click');
 		
+		cat_list.find('.item > a.link[href="' + window.location.pathname + '"]').parents('.item').addClass('active');
+		
 	});
 	

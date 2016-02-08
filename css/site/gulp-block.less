@@ -277,8 +277,7 @@
 			margin-top:5em;
 			margin-left:auto;
 			margin-right:auto;
-			width:360px;
-			height:220px;
+			width:100%;
 			max-width:100%;
 		}
 		.text {
@@ -445,6 +444,7 @@
 	
 }
 .b-all-product-catalog {
+	padding-bottom:4em;
 	
 	.left-cont {
 		
@@ -1769,6 +1769,10 @@ body {
 		padding:0 4em;
 		position:relative;
 		
+		.image.resp {
+			max-width:125px;
+		}
+		
 		.title {
 			font-family:asp;
 			#site.uppercase();
@@ -2162,8 +2166,8 @@ body {
 			transform:rotateY(-180deg);
 			
 			background-position:center center;
-			background-repeat:repeat;
-			background-image:url('@{url-path-img}/b-top-submenu-rotate-btn.png');
+			background-repeat:no-repeat;
+			#site.bi('b-top-submenu-rotate-btn-arrow.png');
 		}
 		
 		.default {
@@ -2187,7 +2191,9 @@ body {
 			
 			.backgr {
 				transform:rotateY(0);
-				#site.color(@c-hex-w);
+				#site.color(transparent);
+				#site.bg(#8f0f0f);
+				#site.bi('b-top-submenu-rotate-btn-arrow.png');
 			}
 			
 			.default {
@@ -3276,7 +3282,7 @@ body {
 				position:absolute;
 				left:0;
 				top:40px;
-				padding:0 20px;
+				padding:0 10px 0 30px;
 			}
 			.more {
 				#site.size(1.8em);
@@ -3285,7 +3291,7 @@ body {
 				position:absolute;
 				left:0;
 				bottom:40px;
-				padding:0 20px;
+				padding:0 10px 0 30px;
 			}
 		}
 		
@@ -3440,6 +3446,7 @@ body {
 					margin:0 auto;
 					display:block;
 					margin-bottom:4.5em;
+					max-width:277px;
 				}
 			}
 			
@@ -4853,6 +4860,7 @@ body {
 				transform-origin:center center;
 				border:0px #8f0f0f solid;
 				transform:scale(1);
+				max-width:100%;
 			}
 		}
 		.title {
