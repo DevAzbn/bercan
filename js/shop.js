@@ -83,9 +83,19 @@ var Shop = {
 	
 	feedback : {
 		
-		create_callorder : function(name, email, cb) {
-			var data = {};
-			cb(data);
+		add : function(view_as, where, title, main_info, cb) {
+			//cmsAPI.callbacks
+			cmsAPI.call({
+				service:'feedback',
+				method:'add',
+				view_as:view_as,
+				where:where,
+				title:title,
+				main_info:main_info,
+				callback:'ShopCartSet'
+			});
+			
+			cb({});
 		},
 		
 	},

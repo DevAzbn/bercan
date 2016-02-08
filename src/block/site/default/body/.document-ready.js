@@ -6,3 +6,5 @@
 		$('#modal-after-send-faq').trigger('setActive');
 		
 	});
+	
+	$('[data-toggle="tooltip"]').tooltip();
