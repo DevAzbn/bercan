@@ -56,12 +56,13 @@
 			});
 			*/
 			item.find('a.m-item').on('click', function(event){
-				/*
 				event.preventDefault();
 				event.stopPropagation();
-				$('.b-top-drd-menu').removeClass('active');
-				$($(this).attr('href') + '.b-top-drd-menu').addClass('active');
-				*/
+				//$('.b-top-drd-menu').removeClass('active');
+				//$($(this).attr('href') + '.b-top-drd-menu').addClass('active');
+				
+				var btn = $(this);
+				window.location.href = btn.attr('data-href');
 			});
 			
 			
