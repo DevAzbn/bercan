@@ -44,8 +44,8 @@
 				_before.addClass('colored');
 				_after.addClass('colored');
 				
-				block.trigger('hide-drd-menu');
-				$(item.find('a.m-item').attr('href')).addClass('active');
+				//block.trigger('hide-drd-menu');
+				//$(item.find('a.m-item').attr('href')).addClass('active');
 			});
 			
 			/*
@@ -58,11 +58,8 @@
 			item.find('a.m-item').on('click', function(event){
 				event.preventDefault();
 				event.stopPropagation();
-				//$('.b-top-drd-menu').removeClass('active');
-				//$($(this).attr('href') + '.b-top-drd-menu').addClass('active');
-				
-				var btn = $(this);
-				window.location.href = btn.attr('data-href');
+				block.trigger('hide-drd-menu');
+				$($(this).attr('href')).addClass('active');
 			});
 			
 			

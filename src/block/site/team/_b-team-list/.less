@@ -4,10 +4,79 @@
 		padding-bottom:6em;
 		
 		.photo {
-			text-align:center;
-			overflow-y:hidden;
-			height:360px;
+			position:relative;
+			width:100%;
+			max-width:360px;
+			margin:0 auto;
+			overflow:hidden;
 			
+			.img-cont {
+				display:block;
+				height:360px;
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-size:cover;
+			}
+			
+			.c990000 {
+				#site.bg(#990000);
+				position:absolute;
+				left:0;
+				top:0;
+				width:100%;
+				height:100%;
+				opacity:0;
+				transition:all @trans-speed ease;
+			}
+			
+			&:before {
+				content:'';
+				position:absolute;
+				left:50%;
+				bottom:50%;
+				#site.w(125px);
+				#site.h(105px);
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-image:url('@{url-path-img}/b-team-list-item-before.png');
+				opacity:0;
+				transition:all @trans-speed ease;
+			}
+			
+			&:after {
+				content:'';
+				position:absolute;
+				right:50%;
+				top:50%;
+				#site.w(125px);
+				#site.h(105px);
+				background-position:center center;
+				background-repeat:no-repeat;
+				background-image:url('@{url-path-img}/b-team-list-item-after.png');
+				opacity:0;
+				transition:all @trans-speed ease;
+			}
+			
+			&:hover {
+				
+				.c990000, &:before, &:after {
+					opacity:0.2;
+				}
+				
+				&:before {
+					left:0;
+					bottom:0;
+				}
+				&:after {
+					right:0;
+					top:0;
+				}
+				
+			}
+			
+			
+			
+			/*
 			img {
 				transition:all @trans-speed / 2 ease;
 				transform-origin:center center;
@@ -15,6 +84,7 @@
 				transform:scale(1);
 				max-width:100%;
 			}
+			*/
 		}
 		.title {
 			#site.size(1.8em);
