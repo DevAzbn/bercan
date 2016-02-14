@@ -17,6 +17,7 @@
 		block.on('setActive', function(event){
 			block.css({height : $(document).height() + 'px',}).addClass('active');
 			mb.css({top : $(document).scrollTop() + 50 + 'px',});
+			//items.filter('.active').removeClass('active');
 		});
 		
 		block.on('setPassive', function(event){
@@ -49,9 +50,11 @@
 			
 			//lastactive = $('.b-modal-container .item.active');
 			//$('.b-modal-container .item').removeClass('active');
-			$(this).addClass('active');
+			
 			//title.html($(this).attr('data-title'));
 			$(this).closest('.b-modal-container').trigger('setActive');
+			$(this).closest('.b-modal-container').find('.grid-row.item').removeClass('active');
+			$(this).addClass('active');
 		});
 		
 		$('.b-modal-container .item').on('setPassive', function(event){

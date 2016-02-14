@@ -40,7 +40,7 @@
 			
 			_before.css({width : w + 'px', left : l + 'px', });
 			
-			item.find('a.m-item').on('mouseover', function(event){
+			item.on('mouseover', function(event){
 				_before.addClass('colored');
 				_after.addClass('colored');
 				
@@ -55,11 +55,12 @@
 				$(this).addClass('active').find('a.m-item').trigger('click');
 			});
 			*/
-			item.find('a.m-item').on('click', function(event){
+			
+			item.on('click', function(event){
 				event.preventDefault();
 				event.stopPropagation();
 				block.trigger('hide-drd-menu');
-				$($(this).attr('href')).addClass('active');
+				$(item.find('a.m-item').attr('href')).addClass('active');
 			});
 			
 			

@@ -43,6 +43,7 @@
 		
 		block.find('.order-info .boxing a.item').on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			
 			var btn = $(this);
 			var product = btn.closest('.boxing').attr('data-product_id');
@@ -63,6 +64,7 @@
 		
 		block.find('.order-info .taste a.item').on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			
 			var btn = $(this);
 			var product = btn.closest('.taste').attr('data-product_id');
