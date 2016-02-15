@@ -6,6 +6,7 @@
 		
 		block.find('.photos .other-photos .item').on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			
 			var btn = $(this);
 			var src = btn.find('img').attr('src');
@@ -16,6 +17,7 @@
 		
 		block.find('.main-info .header ul li a').on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			
 			var btn = $(this);
 			$('.main-info .header ul li').removeClass('active');
@@ -28,6 +30,7 @@
 		
 		block.find('.order-info .btn-cont .like-btn').on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			
 			var btn = $(this);
 			var product = btn.attr('data-product_id');
@@ -52,7 +55,11 @@
 			var old = btn.attr('data-boxing_oldcost');
 			
 			block.find('.order-info .cost-cont .real span').html(real);
-			block.find('.order-info .cost-cont .old span').html(old);
+			if(old > 0) {
+				block.find('.order-info .cost-cont .old span').html(old);
+			} else {
+				block.find('.order-info .cost-cont .old span').html('');
+			}
 			
 			block.find('.order-info .cost-cont').attr('data-product_boxing', boxing);
 			
@@ -80,6 +87,7 @@
 		
 		block.find('.order-info .btn-cont .addone-to-cart').on('click', function(event){
 			event.preventDefault();
+			event.stopPropagation();
 			
 			var btn = $(this);
 			var product = parseInt(btn.attr('data-product_id'));

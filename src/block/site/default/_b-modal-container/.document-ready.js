@@ -42,7 +42,10 @@
 	//})($('.b-modal-container'));
 	});
 		
-		
+		$('.b-modal-container .item').on('click', function(event){
+			//event.preventDefault();
+			event.stopPropagation();
+		});
 		
 		$('.b-modal-container .item').on('setActive', function(event){
 			//event.preventDefault();
