@@ -35,5 +35,13 @@
 			location.href='?maker='+opt.attr('value');
 		});
 		
+		filters.find('select.flt-select[name="order_by"]').on('change', function(event){
+			event.preventDefault();
+			
+			var sel=$(this);
+			var opt=sel.find('option:selected').eq(0);
+			location.href='?order_by='+opt.attr('value');
+		});
+		
 	});
 	
