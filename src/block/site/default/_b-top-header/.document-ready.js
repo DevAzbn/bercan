@@ -18,7 +18,7 @@
 			}
 			
 			btn.toggleClass('active');
-			$('.b-top-cart').toggleClass('active');
+			$('.b-top-cart').trigger('ajax-reload').toggleClass('active');
 		})
 		
 		menubtn.on('click', function(event){

@@ -285,6 +285,13 @@
 				}
 			}
 			
+			.text-item {
+				#site.color(#878787);
+				#site.size(1.2em);
+				padding:1.5em 0;
+				#site.italic();
+			}
+			
 			.btn-item {
 				margin:3em 0 5em;
 				
@@ -330,6 +337,21 @@
 				#site.size(1.4em);
 				#site.lh(1.3em);
 				#site.bold();
+				
+				a {
+					#site.color(#1d1d1d);
+					cursor:pointer;
+					
+					&:hover {
+						#site.underline();
+					}
+				}
+				.taste {
+					#site.color(#878787);
+					#site.italic();
+					#site.size(0.75em);
+					#site.uppercase(capitalize);
+				}
 			}
 			/*
 			.count {
@@ -386,6 +408,32 @@
 			.delete {
 				width:6%;
 				text-align: right;
+			}
+		}
+		
+		.cart-sum-container {
+			.cart-sum {
+				.cart-left-block {
+					#site.w(40%);
+				}
+				.cart-val-block {
+					margin-left:auto;
+					padding:2em 0;
+					#site.w(60%);
+					border-top:2px #8f0f0f solid;
+					#site.color(#8f0f0f);
+					
+					.sum {
+						#site.size(1.8em);
+						#site.ff(gb);
+					}
+					.sum-info {
+						#site.size(1.2em);
+						#site.italic();
+						#site.lh(2.5em);
+						display:none;
+					}
+				}
 			}
 		}
 		

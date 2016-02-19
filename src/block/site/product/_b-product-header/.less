@@ -1,3 +1,43 @@
 .b-product-header {
 	
+	.badge {
+					display:inline-block;
+					position:relative;
+					#site.size(1.2em);
+					margin-left:2em;
+					padding:0.28em 0.5em;
+					border-left:1px #8f0f0f solid;
+					border-top:1px #8f0f0f solid;
+					border-bottom:1px #8f0f0f solid;
+					#site.color(#8f0f0f);
+					/*#site.ff(gb);*/
+					z-index:5;
+					cursor:pointer;
+					vertical-align: middle;
+					
+					&:before {
+						content:'';
+						position:absolute;
+						left:100%;
+						top:-1px;
+						width:1.275em;
+						height:1px;
+						transform-origin:left top;
+						transform:rotate(45deg);
+						#site.bg(#8f0f0f);
+					}
+					
+					&:after {
+						content:'';
+						position:absolute;
+						left:100%;
+						bottom:-1px;
+						width:1.275em;/*1.41421356237em;*/
+						height:1px;
+						transform-origin:left bottom;
+						transform:rotate(-45deg);
+						#site.bg(#8f0f0f);
+					}
+				}
+	
 }

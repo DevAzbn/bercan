@@ -65,6 +65,39 @@ var Shop = {
 			cb({});
 		},
 		
+		fastbuy : function(product, name, phone, cb) {
+			//cmsAPI.callbacks
+			
+			console.log('Shop.cart.fastbuy');
+			
+			cmsAPI.call({
+				service:'cart',
+				method:'fastbuy',
+				product_id:product,
+				name:name,
+				phone:phone,
+				callback:'ShopCartSet'
+			});
+			
+			cb({});
+		},
+		
+		subscribe : function(product, email, cb) {
+			//cmsAPI.callbacks
+			
+			console.log('Shop.cart.subscribe');
+			
+			cmsAPI.call({
+				service:'cart',
+				method:'subscribe',
+				product_id:product,
+				email:email,
+				callback:'ShopCartSet'
+			});
+			
+			cb({});
+		},
+		
 	},
 	
 	post : {

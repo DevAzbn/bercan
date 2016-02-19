@@ -14,6 +14,19 @@
 			btn.find('input[type="radio"]').trigger('click');
 			//btn.find('input[type="radio"]').trigger('click');
 			
+			if(btn.hasClass('personal-delivery')) {
+				$('.b-order-content .cart-sum-container .sum-info').fadeIn('fast');
+			} else {
+				$('.b-order-content .cart-sum-container .sum-info').fadeOut('fast');
+			}
+			
+			if(btn.hasClass('online-method')) {
+				$('.order-form .radio-item.pay .not-online-method').fadeOut('fast');
+			} else {
+				$('.order-form .radio-item.pay .not-online-method').fadeIn('fast');
+			}
+			
+			
 		});
 		
 		block.find('.order-form .checkbox-item label').on('click', function(event){
