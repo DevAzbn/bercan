@@ -16,6 +16,12 @@
 			callback:function(file){
 				//alert(file);
 				block.find('.img-cont .image.resp').attr('src', file);
+				cmsAPI.call({
+					service:'profile',
+					method:'update_img',
+					url:file,
+					callback:'ShopCartSet',
+				});
 				//
 				//cmsAPI.call()
 			}

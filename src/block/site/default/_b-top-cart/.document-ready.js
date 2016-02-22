@@ -6,7 +6,12 @@
 		var items = block.find('.position');
 		var cart_btn_counter = $('.b-top-header .b-top-cart-counter');
 		
-		
+		/*
+		block.on('click', function(event){
+			event.preventDefault();
+			event.stopPropagation();
+		});
+		*/
 		
 		block.on('ajax-reload', function(event){
 			
@@ -154,11 +159,8 @@
 			
 		});
 		
+		$('.b-top-cart').trigger('ajax-reload');
 		
-		
-		block.trigger('recalc-all-position');
-		block.trigger('set-onclick-triggers');
-	
 	});
 	//});
 	

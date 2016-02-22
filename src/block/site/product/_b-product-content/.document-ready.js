@@ -100,6 +100,7 @@
 				setTimeout(function(){
 					
 					btn.html('Купить').toggleClass('r2w w2r disabled');
+					$('.b-top-cart').trigger('ajax-reload');
 					
 				},2500);
 				

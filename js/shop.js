@@ -46,9 +46,18 @@ var Shop = {
 			cb({});
 		},
 		
-		create_review : function(product, name, email, text, cb) {
-			var data = {};
-			cb(data);
+		create_review : function(product_id, view_as, email, main_info, cb) {
+			cmsAPI.call({
+				service:'cart',
+				method:'create_review',
+				product_id:product_id,
+				view_as:view_as,
+				email:email,
+				main_info:main_info,
+				callback:'ShopCartSet'
+			});
+			
+			cb({});
 		},
 		
 		addone : function(product, boxing, taste, cb) {
@@ -110,6 +119,18 @@ var Shop = {
 		upload_post_img : function(img, cb) {
 			var data = {};
 			cb(data);
+		},
+		
+		like : function(post, cb) {
+			//cmsAPI.callbacks
+			cmsAPI.call({
+				service:'post',
+				method:'like',
+				post_id:post,
+				callback:'ShopCartSet'
+			});
+			
+			cb({});
 		},
 		
 	},

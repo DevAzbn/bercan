@@ -9,6 +9,45 @@
 		margin-left:10px;
 	}
 	
+	.add-post-btn {
+		position:relative;
+		display: block;
+		
+		img {
+			position:relative;
+			z-index:1;
+			transition:all 0.4s ease;
+		}
+		
+		&:after {
+			content:'';
+			position:absolute;
+			display:block;
+			left:0;
+			top:0;
+			#site.w(100%);
+			#site.h(100%);
+			background-repeat:no-repeat;
+			background-position:center center;
+			background-image:url('@{url-path-img}/b-profile-add-post-red.png');
+			background-size:cover;
+			z-index:-1;
+			opacity:0;
+			transition:all 0.4s ease;
+		}
+		
+		&:hover {
+			img {
+				opacity:0.01;
+			}
+			&:after {
+				opacity:1;
+				z-index:2;
+			}
+		}
+		
+	}
+	
 	.item {
 		padding-left:10px;
 		padding-right:10px;

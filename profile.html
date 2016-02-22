@@ -697,7 +697,7 @@
 				
 				<div class="title" >
 					<span class="value" >Сергей Сергеев</span>
-					<a href="#profile-edit" class="profile-edit" >Редактировать профиль</a>
+					<a href="#modal-profile-edit" class="profile-edit b-modal-btn" >Редактировать профиль</a>
 				</div>
 				
 				
@@ -804,6 +804,89 @@
 	</div>
 	
 </div>
+
+	
+	<div class="b-modal-container " >
+		<div class="modal-block" >
+			
+			<div class="adaptive-block margin-center grid grid-12  " >
+				
+				<div class="grid-row item" id="modal-profile-edit" data-title="Редактирование профиля" >
+					
+					<div class="clmn-12 clmn-xs-12 clmn-sm-12 clmn-md-12 clmn-lg-12 " >
+						<div class="content white-container small formed" >
+							<a class="hide-modal " href="#close" ></a>
+							
+							<form method="POST" >
+								
+								<div class="m-title" >
+									Пожалуйста, расскажите о себе
+								</div>
+								
+								<div class="m-form-cont" >
+									
+									<div class="input-item name" >
+										
+										<input placeholder="День рождения" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+									<div class="input-item where" >
+										
+										<input placeholder="Город" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+									<div class="input-item vk" >
+										
+										<input placeholder="Адрес ВКонтакте" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+									<div class="input-item fb" >
+										
+										<input placeholder="Адрес Facebook" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+									<div class="input-item inst" >
+										
+										<input placeholder="Адрес Instagram" />
+										
+										<span class="icon" ></span>
+										
+									</div>
+									
+								</div>
+								
+								<div class="m-btn-cont" >
+									
+									<input class="on-hover ch-color btn w2r" type="submit" />
+									
+								</div>
+								
+							</form>
+							
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	
 	
 	<div class="fluid-block b-profile-post-list b-white-bg " >
 	
@@ -865,7 +948,7 @@
 			</div>
 			
 			<div class="clmn-4 clmn-xs-4 clmn-sm-4 clmn-md-4 clmn-lg-4 item" >
-				<a href="#add-post" >
+				<a class="add-post-btn" href="#add-post" >
 					<img class="image resp item-image" src="img/b-profile-add-post.png" />
 				</a>
 				<div class="text" >
