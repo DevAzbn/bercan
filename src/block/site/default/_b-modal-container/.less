@@ -293,6 +293,105 @@
 			
 		}
 	}
+	
+	.profiled {
+		max-width:86em;
+		padding:0em;
+		margin-left:auto;
+		margin-right:auto;
+		
+		.profile-photo {
+			background-position:center center;
+			background-repeat:no-repeat;
+			background-size:cover;
+			background-image:url('@{url-path-img}/b-team-list-item-2.jpg');
+		}
+		.profile-info {
+			padding:5em;
+			
+			.title {
+				#site.ff(gb);
+				#site.bold();
+				#site.color(#8f0e0e);
+				#site.size(2.4em);
+				margin-bottom:1.5em;
+			}
+			.preview {
+				#site.size(1.4em);
+				#site.lh(1.6em);
+				#site.color(#1d1d1d);
+			}
+			.contact-cont {
+				
+				.item {
+					#site.color(#1d1d1d);
+					#site.size(1.4em);
+					#site.lh(2.5em);
+					background-position:left center;
+					background-repeat:no-repeat;
+					padding-left:2em;
+					margin-bottom: 0.4em;
+					
+					a {
+						#site.color(#1d1d1d);
+						
+						&:hover {
+							#site.underline();
+						}
+					}
+					
+					&.vk {
+						background-image:url('@{url-path-img}/profile-contact-vk.png');
+					}
+					&.fb {
+						background-image:url('@{url-path-img}/profile-contact-fb.png');
+					}
+					&.inst {
+						background-image:url('@{url-path-img}/profile-contact-inst.png');
+					}
+				}
+				
+				&.without-edit {
+					margin-top:3em;
+					
+					.item {
+						
+						&.vk, &.fb, &.inst {
+							display:inline-block;
+							border-radius:50%;
+							border:2px #8f0f0f solid;
+							#site.w(3em);
+							#site.h(3em);
+							background-position:center center;
+							padding-left:0em;
+							margin-right:2em;
+							margin-top:1em;
+							
+							a {
+								content:'';
+								display:inline-block;
+								#site.w(100%);
+								#site.h(100%);
+								#site.color(transparent);
+								overflow:hidden;
+							}
+						}
+						
+					}
+					
+				}
+				
+			}
+		}
+	}
+	
+	.product-gallery {
+		max-width:50em;
+		margin-left:auto;
+		margin-right:auto;
+		padding:3em 6em;
+	}
+	
 }
 
 #modal-after-send-faq {

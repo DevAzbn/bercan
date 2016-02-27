@@ -33,6 +33,7 @@
 	.form-main_info {
 		display:block;
 		border:none;
+		max-width:100%;
 		#site.w(100%);
 		#site.h(5em);
 		#site.bg(@c-hex-w);
@@ -41,6 +42,12 @@
 		#site.ff(gr);
 		margin-bottom:1em;
 		padding:0.5em 0.1em;
+		resize: vertical;
+		transition:all 0.5s ease;
+		
+		&:focus {
+			#site.h(15em);
+		}
 	}
 	.form-theme-select {
 		border:1px #c6c6c6 solid;

@@ -61,6 +61,10 @@
 				block.find('.order-info .cost-cont .old span').html('');
 			}
 			
+			block.find('.order-info .taste').hide();
+			block.find('.order-info .taste a.item').removeClass('active');
+			block.find('.order-info .taste[data-cost_id="' + boxing + '"]').show().find('a.item').eq(0).trigger('click');
+			
 			block.find('.order-info .cost-cont').attr('data-product_boxing', boxing);
 			
 			block.find('.order-info .boxing a.item').removeClass('active');
@@ -82,7 +86,7 @@
 			block.find('.order-info .taste a.item').removeClass('active');
 			btn.addClass('active');
 			
-		}).eq(0).trigger('click');
+		});//.eq(0).trigger('click');
 		
 		
 		block.find('.order-info .btn-cont .addone-to-cart').on('click', function(event){

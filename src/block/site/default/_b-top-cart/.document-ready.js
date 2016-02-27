@@ -48,7 +48,7 @@
 			block.attr('data-iamount', _icnt);
 			block.attr('data-aamount', _acnt);
 			block.find('.sum-cont .sum span').html(_sum);
-			cart_btn_counter.html(_icnt);
+			cart_btn_counter.html(_acnt);
 		});
 		
 		

@@ -60,7 +60,11 @@
 				event.preventDefault();
 				event.stopPropagation();
 				block.trigger('hide-drd-menu');
-				$(item.find('a.m-item').attr('href')).addClass('active');
+				if(item.hasClass('go2page')) {
+					window.location.href = item.find('a').attr('href');
+				} else {
+					$(item.find('a.m-item').attr('href')).addClass('active');
+				}
 			});
 			
 			
