@@ -7,8 +7,8 @@
 		slb.width(slb.parent().width());
 		
 		var scrolling = function() {
-			cont.animate({scrollLeft : cont.width()}, 21000, 'linear', function(){
-				cont.animate({scrollLeft : 0}, 21000, 'linear', function(){
+			cont.animate({scrollLeft : cont.width()}, 16000, 'linear', function(){
+				cont.animate({scrollLeft : 0}, 16000, 'linear', function(){
 					scrolling();
 				});
 			});
