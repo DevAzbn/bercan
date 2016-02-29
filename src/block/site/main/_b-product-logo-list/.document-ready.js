@@ -5,6 +5,7 @@
 		var slb = block.find('.scroll-logo-block');
 		var cont = slb.find('.item-list');
 		slb.width(slb.parent().width());
+		slb.fadeIn('fast');
 		
 		var scrolling = function() {
 			cont.animate({scrollLeft : cont.width()}, 16000, 'linear', function(){
