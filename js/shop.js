@@ -107,6 +107,22 @@ var Shop = {
 			cb({});
 		},
 		
+		order_cert : function(product, email, cb) {
+			//cmsAPI.callbacks
+			
+			console.log('Shop.cart.order_cert');
+			
+			cmsAPI.call({
+				service:'cart',
+				method:'order_cert',
+				product_id:product,
+				email:email,
+				callback:'ShopCartSet'
+			});
+			
+			cb({});
+		},
+		
 	},
 	
 	post : {

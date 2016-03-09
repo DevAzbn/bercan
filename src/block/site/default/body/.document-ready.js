@@ -49,3 +49,23 @@
 		return false;
 		
 	});
+	
+	$('form.order-cert-product-form').on('submit', function(event){
+		event.preventDefault();
+		//event.stopPropagation();
+		
+		console.log('.order-cert-product-form submit');
+		
+		var form = $(this);
+		var product_id = form.find('input[name="product_id"]').val();
+		var email = form.find('input[name="email"]').val();
+		
+		Shop.cart.order_cert(product_id, email, function(data){
+			
+			form.closest('.item#modal-product-cert-' + product_id).trigger('setPassive');
+			
+		});
+		
+		return false;
+		
+	});
